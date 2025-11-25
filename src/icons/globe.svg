@@ -1,0 +1,7 @@
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="globe">
+<path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M11 21.0001C16.5228 21.0001 21 16.5229 21 11.0001C21 5.47721 16.5228 1.00006 11 1.00006C5.47715 1.00006 1 5.47721 1 11.0001C1 16.5229 5.47715 21.0001 11 21.0001Z" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape" d="M1 11.0001H21" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M11 1.00006C13.5013 3.73841 14.9228 7.29209 15 11.0001C14.9228 14.708 13.5013 18.2617 11 21.0001C8.49872 18.2617 7.07725 14.708 7 11.0001C7.07725 7.29209 8.49872 3.73841 11 1.00006V1.00006Z" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

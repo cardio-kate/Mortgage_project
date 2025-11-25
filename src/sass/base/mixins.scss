@@ -1,0 +1,59 @@
+@use "/src/sass/base/variables.scss" as * ;
+
+
+@mixin button {
+    width: 40px;
+    height: 40px;
+    background: $ui-active;
+    border-radius: 50%;
+    border: none;
+    z-index: 2;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: -10px;              
+        border-radius: 50%;
+        background: rgba(45,143,180, 0.4);
+        z-index: -1;
+    }
+    span {
+        border-left: 10px solid white;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+    }
+}
+
+@mixin btn-get {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    width: 200px;
+    border-radius: 4px;
+    border: none;
+    padding: 18px 29px;
+    background: $ui-active;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    img {
+        width: 20px;
+        height: 12px;
+    }
+}
+
+@mixin btn-sched {
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid rgba(52, 47, 69, 0.3);
+    background: transparent;
+    padding: 18px 32px;
+    cursor: pointer;
+}
+
+@mixin divider {
+    background: rgba(151, 151, 151, 0.2);
+    height: 1px;
+}

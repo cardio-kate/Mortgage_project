@@ -1,0 +1,100 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+
+.promo {
+    position: relative;
+    &__wrapper {
+        display: flex;
+        gap: 110px;
+    }
+    &__media {
+        flex-shrink: 0;
+    }
+    &__video {
+        position: relative;
+        width: 586px;
+        &-title {
+            position: absolute;
+            left: 102px;
+            top: 572px;
+            color: #ffff;
+            font-size: 18px;
+            font-weight: 700;
+            max-width: 276px;
+        }
+    }
+    &__btn-wrap{
+        position: absolute;
+        display: flex;
+        gap: 12px;
+        top: 639px;
+        left: 92px;
+    }
+    &__btn-play {
+        @include button;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: pulse 3s linear infinite;
+    }
+    &__btn-time {
+        align-self: center;
+        font-size: 13px;
+        font-weight: 400;
+        color: #ffff;
+    }
+    &__img {
+        margin-top: 37px;
+        width: 240px;
+        height: 43px;
+    }
+    &__divider {
+        @include divider;
+        margin-left: 10px;
+        margin-top: 145px;
+        width: 703px;
+    }
+    &__title {
+        margin-top: 160px;
+        margin-left: 10px;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px; 
+        max-width: 580px;
+        span{
+            color: $blue;
+        }
+        &-descr {
+            max-width: 422px;
+            margin-top: 27px;
+            margin-left: 10px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            opacity: 0.5;
+        }
+    }
+    &__controls {
+        display: flex;
+        margin-top: 33px;
+        margin-left: 10px;
+        &-descr{
+            max-width: 184px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        &-btns {
+            display: flex;
+            margin-left: 42px;
+            gap: 24px;
+        }
+    }
+    &__btn-get {
+        @include btn-get;
+    }
+    &__btn-sched {
+        @include btn-sched;
+    }
+}

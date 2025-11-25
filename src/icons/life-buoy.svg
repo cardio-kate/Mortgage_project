@@ -1,0 +1,11 @@
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="life-buoy">
+<path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval_2" fill-rule="evenodd" clip-rule="evenodd" d="M11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7C8.79086 7 7 8.79086 7 11C7 13.2091 8.79086 15 11 15Z" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape" d="M3.92999 3.92999L8.16999 8.16999" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M13.83 13.83L18.07 18.07" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" d="M13.83 8.16999L18.07 3.92999" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_4" d="M13.83 8.17001L17.36 4.64001" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_5" d="M3.92999 18.07L8.16999 13.83" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

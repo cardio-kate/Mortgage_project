@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "sass": "^1.94.2",
+    "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "postcss-pxtorem": "^6.1.0"
+  }
+}

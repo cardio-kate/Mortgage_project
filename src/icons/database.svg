@@ -1,0 +1,7 @@
+<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="database">
+<path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M10 7C14.9706 7 19 5.65685 19 4C19 2.34315 14.9706 1 10 1C5.02944 1 1 2.34315 1 4C1 5.65685 5.02944 7 10 7Z" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape" d="M19 11C19 12.66 15 14 10 14C5 14 1 12.66 1 11" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M1 4V18C1 19.66 5 21 10 21C15 21 19 19.66 19 18V4" stroke="#278FB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
