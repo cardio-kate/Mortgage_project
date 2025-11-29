@@ -103,3 +103,52 @@
         background: #878787;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .menu {
+    &__block {
+        width: 620px;
+    }
+    &__list {
+        row-gap: 28px;
+    }
+}
+}
+
+@media screen and (max-width: 375px) {
+    .menu {
+    &__block {
+        width: 100%;
+        padding-left: 24px;
+        padding-top: 118px;
+    }
+    &__close {
+        gap: 18px;
+        top: 20px;
+        left: 24px;
+    }
+    &__list {
+        row-gap: 12px;
+        padding-left: 34px;
+    }
+    &__link {
+        font-size: 18px;
+        line-height: 20px; 
+    }
+    &__divider {
+        width: 305px;
+        margin-left: 37px;
+    }
+    &__buttons {
+        gap: 5px;
+        margin-top: 25px;
+        padding-left: 35px;
+    }
+    &__btn-get {
+        @include btn-get-mini;
+    }
+    &__btn-sched {
+        @include btn-sched-mini;
+    }
+}
+}

@@ -42,5 +42,30 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    width: 100%;
+	max-width: 1720px;
+	margin: 0 auto;
+	padding: 0 100px;
+	position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+    padding: 0 50px;
+	width: 100%;
+}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+    padding: 0 20px;
+	width: 100%;
+}
+}
+
+@media screen and (max-width: 375px) {
+	.container {
+    padding: 0 5px;
+	width: 100%;
+}
 }

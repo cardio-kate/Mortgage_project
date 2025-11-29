@@ -1,0 +1,225 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.heroes {
+    padding-top: 105px;
+    &__title {
+        color: $dark;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 60px; 
+        text-align: center;
+        &-descr {
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 400;
+        text-align: center;
+    }
+    }
+    &__wrapper{
+        margin-top: 70px;
+        padding: 0 76px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 64px;
+    }
+    &__btn-wrap {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        top: 83px;
+        left: 283px;
+    }
+    &__btn-play {
+        @include button;
+    }
+    &__divider-mini{
+        @include divider;
+        width: 40px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    &__divider{
+        @include divider;
+        width: 448px;
+        margin-top: 2px;
+        margin-left: 0;
+    }
+    &__card {
+        &-top{
+        position: relative;
+    }
+        &-img{
+            position: relative;
+            margin-left: 32px;
+            width: 390px;
+            height: 273px;
+            object-fit: contain;
+    }
+        &-sign {
+        font-size: 13px;
+        font-weight: 400;
+    }
+        &-bottom{
+        padding: 28px 32px 0 32px;
+        border-radius: 4px;
+        box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
+    }
+        &-role {
+        color: $ui-active;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+        &-name {
+        margin-top: 5px;
+        color: $dark;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+        &-descr {
+        max-width: 360px;
+        line-height: 24px;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+        &-items {
+            margin-top: 24px;
+            line-height: 28px;
+            font-size: 16px;
+            font-weight: 700;
+            color: $dark;
+        }
+    }
+    &__skills {
+        margin-top: 16px;
+        display: flex;
+        justify-content: start;
+        gap: 40px;
+        &-wrap{
+            padding-bottom: 31px;
+        }
+        &-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            border: 1px solid #E8E8E8;
+            margin: 0 auto;
+            border-radius: 100%;
+            background: #FCFCFC;
+        }
+        &-icon {
+            max-width: 22px;
+        }
+        &-text {
+            display: block;
+            text-align: center;
+            max-width: 78px;
+            margin-top: 7px;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 12px;
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .heroes{
+        &__wrapper{
+        gap: 75px;
+    }
+}
+}
+
+@media screen and (max-width: 768px) {
+    .heroes{
+        &__wrapper{
+        margin-top: 60px;
+        padding: 0;
+        justify-content: space-between;
+        }
+        &__title {
+        font-size: 30px;
+        &-descr {
+        font-size: 15px;
+    }
+    }
+}
+}
+
+@media screen and (max-width: 375px) {
+    .heroes{
+        &__wrapper{
+        margin-top: 60px;
+        padding: 0;
+        }
+        &__btn-wrap {
+        left: 250px;
+        }
+        &__divider{
+        @include divider;
+        width: 308px;
+        }
+        &__title {
+        font-size: 28px;
+        line-height: 30px; 
+        &-descr {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        }
+        &__card {
+            &-sign {
+            font-size: 9px;
+            }
+            &-img{
+            margin-left: 0px;
+            }
+            &-bottom{
+            padding: 20px 17px 0 17px;
+            }
+            &-role {
+            font-size: 8px;
+            }
+            &-name {
+            font-size: 25px;
+            line-height: 20px;
+            }
+            &-descr {
+            max-width: 340px;
+            line-height: 18px;
+            font-size: 12px;
+            }
+            &-items {
+            margin-top: 22px;
+            line-height: 20px;
+            font-size: 14px;
+            }
+        }
+        &__skills {
+        gap: 24px;
+        &-circle {
+            width: 44px;
+            height: 44px;
+        }
+        &-icon {
+            width: 17px;
+            height: 17px;
+        }
+        &-text {
+            max-width: 58px;
+            font-size: 9px;
+            line-height: 10px;
+        }
+    }
+}
+}

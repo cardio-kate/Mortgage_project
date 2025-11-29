@@ -1,4 +1,13 @@
 {
+  "name": "mortgage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vite.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "sass": "^1.94.2",
     "vite": "^7.2.4"
