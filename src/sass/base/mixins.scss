@@ -1,6 +1,6 @@
 @use "/src/sass/base/variables.scss" as * ;
 
-@mixin button {
+@mixin animated-button {
     width: 40px;
     height: 40px;
     background: $ui-active;
@@ -74,13 +74,14 @@
 }
 
 @mixin btn-sched-mini {
-    width: 150px;
+    width: 120px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 700;
     border: 1px solid rgba(52, 47, 69, 0.3);
     color: $dark;
     background: transparent;
-    padding: 12px 14px;
+    padding: 10px 12px;
     cursor: pointer;
 }
 
@@ -88,22 +89,22 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 28px;
-    width: 150px;
+    gap: 24px;
+    width: 120px;
     border-radius: 4px;
     border: none;
-    padding: 12px 14px;
+    padding: 10px 12px;
     background: $ui-active;
     color: #FFF;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
     cursor: pointer;
     position: relative; 
     &::after {
         content: '';
         flex-shrink: 0;
-        width: 20px; 
-        height: 12px; 
+        width: 18px; 
+        height: 10px; 
         background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none"><path d="M1.00001 6.83332C0.539768 6.83332 0.166672 6.46023 0.166672 5.99999C0.166672 5.53975 0.539768 5.16666 1.00001 5.16666H19C19.4602 5.16666 19.8333 5.53975 19.8333 5.99999C19.8333 6.46023 19.4602 6.83332 19 6.83332H1.00001Z" fill="white"/><path d="M17.8215 5.99999L13.4107 1.58925C13.0853 1.26381 13.0853 0.736171 13.4107 0.410734C13.7362 0.0852973 14.2638 0.0852973 14.5893 0.410734L19.5893 5.41073C19.9147 5.73617 19.9147 6.26381 19.5893 6.58925L14.5893 11.5892C14.2638 11.9147 13.7362 11.9147 13.4107 11.5892C13.0853 11.2638 13.0853 10.7362 13.4107 10.4107L17.8215 5.99999Z" fill="white"/></svg>');
         background-repeat: no-repeat;
         background-size: contain;

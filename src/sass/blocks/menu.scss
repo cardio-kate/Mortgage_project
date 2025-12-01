@@ -115,7 +115,7 @@
 }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
     .menu {
     &__block {
         width: 100%;
@@ -123,32 +123,55 @@
         padding-top: 118px;
     }
     &__close {
-        gap: 18px;
-        top: 20px;
+        gap: 20px;
+        top: 24px;
         left: 24px;
     }
     &__list {
-        row-gap: 12px;
-        padding-left: 34px;
+        row-gap: 25px;
+        padding-left: 40px;
     }
     &__link {
         font-size: 18px;
-        line-height: 20px; 
+        line-height: 18px; 
     }
     &__divider {
-        width: 305px;
-        margin-left: 37px;
+        width: 80%;
+        margin-left: 36px;
+        margin-top: 80px;
     }
     &__buttons {
-        gap: 5px;
-        margin-top: 25px;
-        padding-left: 35px;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+        padding-left: 37px;
     }
     &__btn-get {
         @include btn-get-mini;
     }
     &__btn-sched {
         @include btn-sched-mini;
+    }
+}
+}
+
+@media screen and (max-width: 375px) {
+    .menu {
+    &__close {
+        gap: 18px;
+        top: 20px;
+    }
+    &__list {
+        row-gap: 12px;
+        padding-left: 35px;
+    }
+    &__link {
+        font-size: 16px;
+        line-height: 20px; 
+    }
+    &__buttons {
+        gap: 5px;
+        margin-top: 25px;
     }
 }
 }
