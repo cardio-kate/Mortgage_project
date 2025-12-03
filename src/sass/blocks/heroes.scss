@@ -32,7 +32,7 @@
         left: 283px;
     }
     &__btn-play {
-        @include animated-button;
+        @include anim_btn-blue;
     }
     &__divider-mini{
         @include divider;
@@ -146,6 +146,7 @@
         font-size: 24px;
         &-descr {
         font-size: 13px;
+        margin-top: 10px;
     }
     }
     &__wrapper{
@@ -205,7 +206,8 @@
         margin-top: 60px;
         }
         &__btn-wrap {
-        left: 210px;
+        left: 200px;
+        gap: 20px;
         top: 63px;
         }
         &__divider{
@@ -216,13 +218,13 @@
         font-size: 28px;
         line-height: 30px; 
         &-descr {
-            font-size: 12px;
+            font-size: 14px;
             margin-top: 10px;
         }
         }
         &__card {
             &-sign {
-            font-size: 9px;
+            font-size: 14px;
             }
             &-img{
             margin-left: 0px;
@@ -231,7 +233,7 @@
             padding: 20px 10px 0 10px;
             }
             &-role {
-            font-size: 8px;
+            font-size: 10px;
             }
             &-name {
             font-size: 25px;
