@@ -5,13 +5,13 @@
     position: relative;
     margin-top: 104px;
     &__title {
-        margin-left: 30px;
+        margin-left: calc(30px + 0.4583333 * (100vw - 1440px));
         color: $dark;
         font-size: 36px;
         font-weight: 700;
         line-height: 60px;
         &-descr{
-            margin-left: 30px;
+            margin-left: calc(30px + 0.4583333 * (100vw - 1440px));
             font-size: 18px;
             font-weight: 400;
             color: rgba(0, 0, 0, 0.5);
@@ -19,11 +19,12 @@
     }
     &__wrapper{
         display: flex;
-        gap: 64px;
+        justify-content: center;
+        gap: 48px;
         padding-top: 50px;
+        margin-left: 28px;
     }
     &__panels {
-        margin-left: 28px;
         &-wrap{
             display: flex;
             flex-direction: column;
@@ -31,7 +32,7 @@
         }
     }
     &__panel {
-        padding: 28px 40px 44px;
+        padding: 28px 40px;
         width: 380px;
         height: 210px;
         border-radius: 4px;
@@ -54,10 +55,11 @@
         hr {
             @include divider;
             width: 40px;
-            margin-left: 0;
+            margin-top: 20px;
+            margin-left: 0px;
         }
         p {
-            margin-top: 18px;
+            margin-top: 10px;
             color: rgba(0, 0, 0, 0.5);
             font-size: 14px;
             font-style: normal;
@@ -84,14 +86,16 @@
     }
     &__video {
         display: grid;
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: auto auto;   
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 24px;
-        margin-right: 28px;
+        padding-right: 28px;
         &-top {
             background: #F6F2FF;
-            grid-column: 1 / 3; 
-            height: 436px;
+            grid-column: 1 / 3;           
+            width: 796px;                
+            max-width: 100%;              
+            justify-self: center;         
+            height: auto;
         }
         &-back {
             position: relative;
@@ -108,7 +112,6 @@
                 border-radius: 4px;
                 inset: 0;
                 background: rgba(35, 123, 154, 0.52);
-                /*pointer-events: none;*/
         }
         }
         &-media {
@@ -118,9 +121,10 @@
             align-items: center;
             z-index: 2;
         }
-        &-bott {
+        &-bottom {
             width: 386px;
-            height: 234px;
+            max-width: 100%;              
+            height: auto;
             background: #F6F2FF;
         }
         &-under{
@@ -137,7 +141,6 @@
                 border-radius: 4px;
                 inset: 0;
                 background: rgba(35, 123, 154, 0.52);
-                /*pointer-events: none;*/
         }
         }
         &-title {
@@ -161,17 +164,17 @@
     &__dots-wrap{
     position: absolute;
     width: 12px;
-    left: 44px;
+    left: clamp(44px, calc(44px + 0.447826 * (100vw - 1440px)), 250px);
     top: 232px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 214px; 
-    padding:0;
+    padding: 0;
     &::before {
         content: "";
         position: absolute;
-        left: 50%;
+        left: 6px;
         top: calc(24px / 2);        
         bottom: calc(24px / 2);    
         width: 2px;
@@ -212,7 +215,6 @@
     margin: 0;
     right: 0;
     bottom: 0;
-    padding: 15px 8px 0 8px;
     border: none;
     opacity: 0;
     z-index: 10;
@@ -225,16 +227,16 @@
     }
     &-content {
         position: relative;
-        width: 393px;
+        width: 409px;
         background: #fff;
-        padding: 9px 16px;
+        padding: 24px 24px 12px;
         border-radius: 4px 48px 4px 4px;
         box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
     }
     &-top{
         display: flex;
         align-items: flex-start;
-        gap: 16px;
+        gap: 19px;
         padding-bottom: 2px;
     }
     &-text {
@@ -261,7 +263,7 @@
         font-weight: 400;
     }
     &-btn {
-        padding: 10px 25px;
+        padding: 10px 27px;
         background: $ui-active;
         color: #fff;
         border: none;
@@ -270,9 +272,11 @@
         cursor: pointer;
     }
     &-avatar {
-        width: 64px;
-        margin: 0 auto;
         text-align: center;
+        img {
+            width: 64px;
+            height: 64px;
+        }
     }
     &-name {
         margin-top: 4px;
@@ -287,3 +291,194 @@
 }   
 }
 
+@media screen and (max-width: 1440px) {
+    .journey {
+        &__title {
+            margin-left: calc(70px - 0.175 * (100vw - 1200px));
+            &-descr{
+            margin-left: calc(70px - 0.175 * (100vw - 1200px));
+        }
+    }
+}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .journey {
+    &__title {
+    margin-left: 50px;
+    font-size: 24px;
+    line-height: 40px;
+    &-descr{
+        margin-left: 50px;
+        font-size: 16px;
+    }
+    }
+    &__wrapper{
+        gap: 20px;
+        margin-left: 50px;
+        align-items: center;
+    }
+    &__panels {
+        &-wrap{
+            gap: 15px;
+        }
+    }
+    &__panel {
+        padding: 15px 15px 0 15px;
+        width: 290px;
+        height: 180px;
+        h4 {
+            margin-top: 5px;
+            font-size: 17px;
+            line-height: 20px;
+        }
+        hr {
+            margin-top: 10px;
+        }
+        p {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 18px; 
+        }
+    }
+    &__panel.active {
+        margin-left: 10px;
+    }
+    &__video{
+        padding-right: 0;
+        &-back {
+        height: 250px;
+        background-size: 140px;
+        padding-top: 82px;
+    }
+        &-under {
+        height: 250px;
+    }
+        &-bottom {
+        height: 250px;
+        grid-column: 1/3;
+        width: 100%;
+    }
+        &-top {
+        height: 250px;
+        }
+    }
+    &__dots-wrap{
+    position: absolute;
+    width: 12px;
+    left: clamp(44px, calc(44px + 0.447826 * (100vw - 1440px)), 250px);
+    top: 310px;
+    }
+    &__modal {
+        &-content {
+        width: 350px;
+        padding: 20px 20px 10px;
+    }
+        &-top{
+            gap: 10px;
+    }
+        &-text {
+            margin: 0;
+            width: 210px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.7);;
+    }
+        &-div {
+            width: 240px;
+    }
+        &-footer {
+            margin-top: 8px;
+    }
+        &-btn {
+            padding: 8px 20px;
+    }
+        &-avatar {
+            img {
+                width: 54px;
+                height: 54px;
+            }
+    }
+}
+&__modal.show {
+    transform: translateX(0);
+    opacity: 1;
+    margin-right: 10px;
+}
+}
+}
+
+@media screen and (max-width: 768px) {
+    .journey {
+        &__title {
+        margin-left: 0;
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+        &-descr{
+            margin-left: 0;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+        &__wrapper{
+            flex-wrap: wrap;
+            margin-left: 0;
+            gap: 80px;
+    }
+    &__dots-wrap{
+        left: clamp(25px, calc(25px + 0.347 * (100vw - 375px)), 160px);
+        top: 180px;
+    }
+    &__panels{
+        margin-left: 5px;
+    }
+    &__panel {
+        padding: 15px 20px;
+        width: 280px;
+        height: 180px;
+        border-radius: 4px;
+        border: 1px solid #EAEAEA;
+        cursor: pointer;
+        span {
+            font-size: 11px;
+        }
+        h4 {
+            margin-top: 9px;
+            font-size: 22px;
+            line-height: 20px;
+        }
+        p {
+            margin-top: 5px;
+            font-size: 14px;
+            line-height: 20px; 
+        }
+    }
+    &__modal {
+        &-content {
+        width: 320px;
+    }
+        &-icon {
+        width: 22px;
+        height: 22px;
+    }
+        &-top{
+            gap: 8px;
+    }
+        &-text {
+            line-height: 18px;
+    }
+        &-avatar {
+            img {
+                width: 44px;
+                height: 44px;
+            }
+    }
+    
+}
+}
+}
