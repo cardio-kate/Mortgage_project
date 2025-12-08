@@ -286,7 +286,7 @@
 }
 &__modal.show {
     transform: translateX(0);
-    opacity: 1;
+    opacity: 0;
     margin-right: 50px;
 }   
 }
@@ -350,8 +350,8 @@
         padding-right: 0;
         &-back {
         height: 250px;
-        background-size: 140px;
-        padding-top: 82px;
+        background-size: 120px;
+        padding-top: 62px;
     }
         &-under {
         height: 250px;
@@ -369,7 +369,7 @@
     position: absolute;
     width: 12px;
     left: clamp(44px, calc(44px + 0.447826 * (100vw - 1440px)), 250px);
-    top: 310px;
+    top: 282px;
     }
     &__modal {
         &-content {

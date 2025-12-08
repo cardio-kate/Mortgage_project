@@ -14,42 +14,57 @@ closeElem.addEventListener('click', () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+
     const dots = document.querySelectorAll(".journey__dot");
     const panels = document.querySelectorAll(".journey__panel");
 
+    function activateStep(step) {
+        dots.forEach(dot => {
+            dot.classList.toggle("active", dot.dataset.step === step);
+        });
+        panels.forEach(panel => {
+            panel.classList.toggle("active", panel.dataset.step === step);
+        });
+    }
+
     dots.forEach(dot => {
         dot.addEventListener("click", () => {
-            const step = dot.dataset.step;
-
-            dots.forEach(d => d.classList.remove("active"));
-            dot.classList.add("active");
-
-            panels.forEach(panel => {
-                panel.classList.toggle("active", panel.dataset.step === step);
-            });
+            activateStep(dot.dataset.step);
         });
     });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+    panels.forEach(panel => {
+        panel.addEventListener("click", () => {
+            activateStep(panel.dataset.step);
+        });
+    });
+
     const modal = document.getElementById("journeyModal");
     const section = document.querySelector(".journey");
-    
-    if (!modal || !section) return;
-    let shown = false;
-    function checkVisibility() {
-        const rect = section.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        const sectionHeight = section.offsetHeight;
-        const scrolled = windowHeight - rect.top; 
-        const progress = scrolled / sectionHeight; 
 
-        if (progress > 0.7 && !shown) {
-            modal.classList.add("show");
-            shown = true;
+    if (modal && section) {
+        let shown = false;
+
+        function checkVisibility() {
+            const rect = section.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            const sectionHeight = section.offsetHeight;
+            const scrolled = windowHeight - rect.top;
+            const progress = scrolled / sectionHeight;
+
+            if (progress > 0.7 && !shown) {
+                modal.classList.add("show");
+                shown = true;
+            }
         }
+
+        window.addEventListener("scroll", checkVisibility);
     }
-    window.addEventListener("scroll", checkVisibility);
+
 });
+
+
+
+
 
 
