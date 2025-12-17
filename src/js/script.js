@@ -13,6 +13,8 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const dots = document.querySelectorAll(".journey__dot");
@@ -61,10 +63,58 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener("scroll", checkVisibility);
     }
 
+    const pages = document.querySelectorAll('.reviews__page-left');
+    const pagDots = document.querySelectorAll('.reviews__dot'); 
+    const btnLeft = document.querySelector('.reviews__btn-left');
+    const btnRight = document.querySelector('.reviews__btn-right');
+    const currentNumber = document.querySelector('.reviews__number-current');
+
+    let pageIndex = 0; 
+    let dotIndex = 0;  
+
+    const formatNumber = (num) => String(num).padStart(2, '0');
+
+    function updateUI() {
+        pages.forEach((page, i) => {
+            page.classList.toggle('active', i === pageIndex);
+        });
+
+        pagDots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === dotIndex);
+        });
+
+        if (currentNumber) {
+            currentNumber.textContent = formatNumber(dotIndex + 1);
+        }
+    }
+
+    btnRight.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        dotIndex = (dotIndex + 1) % pagDots.length;
+        if (pages.length > 1) pageIndex = dotIndex % pages.length;
+
+        updateUI();
+    });
+
+    btnLeft.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        dotIndex = (dotIndex - 1 + pagDots.length) % pagDots.length;
+        if (pages.length > 1) pageIndex = dotIndex % pages.length;
+
+        updateUI();
+    });
+
+    pagDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            dotIndex = index;
+            if (pages.length > 1) pageIndex = index;
+
+            updateUI();
+        });
+    });
+
+    updateUI();
+
 });
-
-
-
-
-
-

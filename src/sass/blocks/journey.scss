@@ -34,7 +34,7 @@
     &__panel {
         padding: 28px 40px;
         width: 380px;
-        height: 210px;
+        min-height: 210px;
         border-radius: 4px;
         border: 1px solid #EAEAEA;
         cursor: pointer;
@@ -302,8 +302,6 @@
 }
 }
 
-
-
 @media screen and (max-width: 1200px) {
     .journey {
     &__title {
@@ -328,7 +326,7 @@
     &__panel {
         padding: 15px 15px 0 15px;
         width: 290px;
-        height: 180px;
+        min-height: 180px;
         h4 {
             margin-top: 5px;
             font-size: 17px;
@@ -440,7 +438,6 @@
     &__panel {
         padding: 15px 20px;
         width: 280px;
-        height: 180px;
         border-radius: 4px;
         border: 1px solid #EAEAEA;
         cursor: pointer;
