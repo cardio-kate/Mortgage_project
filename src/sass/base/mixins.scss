@@ -139,3 +139,55 @@
         background-size: contain;
     }
 }
+
+@mixin btn-download {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 144px;
+    padding: 12px 15px 12px 29px;
+    border: none;
+    border-radius: 30px;
+    background-color: $ui-active;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 0 8px rgba(79, 143, 177, 0.4);
+    &::after {
+        content: '';
+        width: 14px;
+        height: 14px;
+        margin-left: 14px;
+        flex-shrink: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='20' viewBox='0 0 14 20' fill='none'><path d='M6.99992 0C7.46016 0 7.83325 0.373096 7.83325 0.833333V16.3215L12.5892 11.5656C12.9147 11.2401 13.4423 11.2401 13.7678 11.5656C14.0932 11.891 14.0932 12.4187 13.7678 12.7441L7.5892 18.9227C7.26376 19.2482 6.73612 19.2482 6.41068 18.9227L0.232087 12.7441C-0.0933495 12.4187 -0.0933495 11.891 0.232087 11.5656C0.557523 11.2401 1.08516 11.2401 1.4106 11.5656L6.16659 16.3215V0.833333C6.16659 0.373096 6.53968 0 6.99992 0Z' fill='white'/></svg>");
+    }
+}
+
+@mixin anim_btn-view {
+    display: inline-flex;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 14px 11px;
+    border: none;
+    border-radius: 22px;
+    background-color: $ui-active;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 0 8px rgba(79, 143, 177, 0.35);
+    animation: pulse 3s linear infinite;
+    &::after {
+        content: '';
+        width: 22px;
+        height: 16px;
+        flex-shrink: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='18' viewBox='0 0 24 18' fill='none'><path fill-rule='evenodd' clip-rule='evenodd' d='M1 9C1 9 5 1 12 1C19 1 23 9 23 9C23 9 19 17 12 17C5 17 1 9 1 9Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path fill-rule='evenodd' clip-rule='evenodd' d='M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    }
+}
