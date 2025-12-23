@@ -168,6 +168,32 @@
         box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
         text-decoration: none;
         cursor: pointer;
+
+        transition: 
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+        @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            box-shadow: 0 27px 58px 0 rgba(0, 84, 114, 0.38);
+            background-color: $ui-active;
+            .education__headline-small {
+                color: #fff;
+            }
+            .education__text {
+                color: rgba(255, 255, 255, 0.7);
+            }
+            .education__divider-small {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            .education__footer-author {
+                color: #fff;
+            }
+            .education__tag-small,
+            .education__footer-mark {
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
     }
     &__resources{
         display: flex;
@@ -226,38 +252,19 @@
         &-action {
             margin-top: 23px;
             padding-bottom: 26px;
+            
         }
         &-btn {
             text-decoration: none;
             margin-left: 213px;
             @include btn-download;
         }
-        &-view {
+        &-link {
             margin-left: 311px;
+        }
+        &-view {
             @include anim_btn-view;
         }
-    }
-}
-.education__blog-small.active {
-    box-shadow: 0 27px 58px 0 rgba(0, 84, 114, 0.38);
-    background-color: $ui-active;
-    .education__headline-small {
-        color: #ffffff;
-    }
-    .education__text {
-        color: rgba(255, 255, 255, 0.7);
-    }
-    .education__divider-small {
-        background: rgba(255, 255, 255, 0.2);
-    }
-    .education__footer-author {
-        color: #ffffff;
-    }
-    .education__tag-small {
-        color: rgba(255, 255, 255, 0.5);
-    }
-    .education__footer-mark {
-        color: rgba(255, 255, 255, 0.5);
     }
 }
 
@@ -289,9 +296,9 @@
             &-btn {
                 margin-left: 39px;
             }
-            &-view {
-                margin-left: 41px;
-            }
+            &-link {
+            margin-left: 41px;
+        }
         }
     }
 }

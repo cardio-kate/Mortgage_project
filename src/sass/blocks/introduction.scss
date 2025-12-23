@@ -1,0 +1,51 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.introduction {
+    position: relative;
+    box-shadow: 0 18px 39px 0 rgba(114, 168, 192, 0.13);
+    &__logo {
+        display: block;
+        margin-left: calc(30px + 0.4583333 * (100vw - 1440px));
+        padding-top: 30px;
+    }
+    &__autor {
+        padding-top: 16px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .introduction {
+    &__logo {
+        margin-left: 30px;
+    }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .introduction {
+    &__logo {
+        margin-left: 65px;
+    }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .introduction {
+    &__autor {
+    padding-top: 46px;
+    }
+    &__logo {
+        width: 200px;
+    }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .introduction {
+    &__logo {
+        width: 170px;
+    }
+    }
+}
