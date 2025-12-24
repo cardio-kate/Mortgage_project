@@ -119,15 +119,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-document.querySelectorAll('.education__blog-small').forEach(card => {
-    card.addEventListener('click', e => {
-    e.preventDefault();
-
-    document
-    .querySelectorAll('.education__blog-small')
-    .forEach(c => c.classList.remove('active'));
-
-    card.classList.add('active');
-    });
-});
 
