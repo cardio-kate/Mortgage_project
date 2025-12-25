@@ -1,18 +1,10 @@
 @use "/src/sass/base/variables.scss" as *;
 @use "/src/sass/base/mixins.scss" as *;
 
-.education {
-    margin-top: 104px;
-    &__wrap {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
+.articles {
+    margin-top: 90px;
+    &__wrapper {
         margin-left: calc(30px + 0.4583333 * (100vw - 1440px));
-    }
-    &__titles {
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
     }
     &__title {
         color: $dark;
@@ -20,44 +12,20 @@
         font-weight: 700;
         line-height: 36px; 
         margin-bottom: 4px;
-        &-list {
-            position: relative;
-            color: $ui-active;
-            font-size: 14px;
-            font-weight: 700;
-            background: none;
-            border: none;
-            padding: 0;
-            cursor: pointer;
-            &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 100%;
-            height: 1px;
-            background-color: $ui-active;
-            }
-        }
-    }
-    &__card {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
     }
     &__blogs {
+        margin-top: 20px;
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 397px));
+        grid-template-columns: repeat(3, minmax(0, 397px));
         gap: 24px;
-        width: 100%;
     }
     &__blog-big {
+        grid-column: span 2;
         display: block;
         background-image: url("/src/img/background.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 4px;
-        grid-column: 1 / -1;
         padding: 28px 32px 32px 28px;
         text-decoration: none;
         cursor: pointer;
@@ -176,136 +144,56 @@
         &:hover {
             box-shadow: 0 27px 58px 0 rgba(0, 84, 114, 0.38);
             background-color: $ui-active;
-            .education__headline-small {
+            .articles__headline-small {
                 color: #fff;
             }
-            .education__text {
+            .articles__text {
                 color: rgba(255, 255, 255, 0.7);
             }
-            .education__divider-small {
+            .articles__divider-small {
                 background-color: rgba(255, 255, 255, 0.2);
             }
-            .education__footer-author {
+            .articles__footer-author {
                 color: #fff;
             }
-            .education__tag-small,
-            .education__footer-mark {
+            .articles__tag-small,
+            .articles__footer-mark {
                 color: rgba(255, 255, 255, 0.5);
             }
         }
     }
     }
-    &__resources{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        &-title {
-            color: $dark;
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 36px;
-        }
-        &-card {
-            display: flex;
-            flex-direction: column;
-            max-width: 397px;          
-            aspect-ratio: 397 / 266;
-            border-radius: 4px;
-            box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
-        }
-        &-wrap {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-        &-top {
-            display: flex;
-            align-items: flex-start;
-            gap: 24px;
-            padding: 24px 32px ;
-        }
-        &-img {
-            margin-top: 4px;
-        }
-        &-label {
-            display: block;
-            color: $ui-active;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        &-name {
-            margin-top: 17px;
-            color: $dark;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 26px; 
-        }
-        &-divider {
-            @include divider;
-            width: 333px;
-            margin-left: 32px;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        &-action {
-            margin-top: 23px;
-            padding-bottom: 26px;
-        }
-        &-btn {
-            text-decoration: none;
-            margin-left: 213px;
-            @include btn-download;
-        }
-        &-link {
-            margin-left: 311px;
-        }
-        &-view {
-            @include anim_btn-view;
-        }
-    }
 }
 
 @media screen and (max-width: 1440px) {
-    .education {
-        &__wrap {
+    .articles {
+        &__wrapper {
             margin-left: calc(30px + 0.083333 * (1440px - 100vw));
         }
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .education {
-        &__wrap {
-            margin-left: 50px;
-            gap: 84px;
+    .articles {
+        &__wrapper {
+            margin-left: 0;
+            padding: 0 50px;
         }
-        &__resources {
-            &-wrap {
-            grid-template-columns: repeat(2, minmax(310px, 1fr));
-            }
-            &-divider {
-            width: 70%;
-            }
-            &-name {
-                font-size: 19px;
-                line-height: 22px;
-            }
-            &-btn {
-                margin-left: 39px;
-            }
-            &-link {
-            margin-left: 41px;
-        }
+        &__blogs {
+            grid-template-columns: repeat(2, minmax(0, 517px));
+            gap: 24px;
         }
     }
 }
 
 @media screen and (max-width: 768px) {
-    .education {
-        &__wrap {
-            margin-left: 0;
+    .articles {
+        &__wrapper {
+            padding: 0;
+        }
+        &__blogs {
+            grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+            gap: 24px;
         }
         &__title {
             font-size: 30px;
@@ -322,35 +210,15 @@
             font-size: 25px;
             margin-top: 60px;
         }
-        &__blogs {
-            grid-template-columns: repeat(2, minmax(0, 397px));
-            width: 100%;
-        }
         &__blog-big {
             padding: 24px;
+            grid-column: span 1;
         }
         &__blog-small {
-            grid-column: 1 / -1;
             padding: 24px;
         }
         &__footer {
             margin-top: 15px;
-        }
-        &__resources {
-            margin: 0 auto;
-            &-wrap {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            }
-            &-name {
-                font-size: 16px;
-            }
-            &-title {
-                align-self: center;
-                font-size: 30px;
-            }
-            &-divider {
-                width: 80%;
-            }
         }
     }
 }

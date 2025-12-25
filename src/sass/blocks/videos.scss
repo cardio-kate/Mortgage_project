@@ -7,8 +7,7 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 397px));
         justify-content: center;
-        gap: 25px;
-        padding: 0 calc(30px + 0.083333 * (1440px - 100vw)) ;
+        gap: 24px;
     }
     &__top {
         background: #F6F2FF;
