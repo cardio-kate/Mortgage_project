@@ -1,0 +1,131 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.resources{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__title {
+        margin-left: calc(30px + 0.4583333 * (100vw - 1440px));
+        color: $dark;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        max-width: 397px;          
+        border-radius: 4px;
+        box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
+    }
+    &__wrapper {
+        margin-left: calc(30px + 0.4583333 * (100vw - 1440px));
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(260px, 397px));
+        gap: 25px;
+    }
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 24px 32px ;
+    }
+    &__img {
+        margin-top: 4px;
+    }
+    &__label {
+        display: block;
+        color: $ui-active;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    &__name {
+        margin-top: 17px;
+        color: $dark;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px; 
+    }
+    &__divider {
+        @include divider;
+        width: 333px;
+        margin-left: 32px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &__action {
+        margin-top: 23px;
+        padding-bottom: 26px;
+    }
+    &__btn {
+        text-decoration: none;
+        margin-left: 213px;
+        @include btn-download;
+    }
+    &__link {
+        margin-left: 311px;
+    }
+    &__view {
+        @include anim_btn-view;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .resources {
+        &__wrapper, &__title {
+            margin-left: calc(30px + 0.083333 * (1440px - 100vw));
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .resources {
+        &__title {
+            margin-left: 50px;
+        }
+        &__wrapper {
+            margin-left: 0;
+            padding: 0 50px;
+        }
+        &__divider {
+            width: 82%;
+        }
+        &__name {
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &__btn {
+            margin-left: 0;
+        }
+        &__top {
+            gap: 15px;
+        }
+        &__action {
+            display: flex;
+            justify-content: end;
+            margin-right: 25px;
+        }
+        &__link {
+            margin-left: 0;
+    }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .resources {
+        &__title {
+            margin-left: 0;
+            font-size: 30px;
+        }
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
+        }
+    }
+}
