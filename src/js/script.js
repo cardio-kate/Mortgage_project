@@ -1,21 +1,29 @@
 import "/src/sass/style.scss";
 
+document.addEventListener("DOMContentLoaded", () => {
 
-const hamburger = document.querySelector('.hamburger'),
-        menu = document.querySelector('.menu'),
-        closeElem = document.querySelector('.menu__close-touch');
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+const closeElem = document.querySelector('.menu__close-touch');
+const menuLinks = document.querySelectorAll('.menu__link');
+
+if (!hamburger || !menu) return; 
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
 });
 
-closeElem.addEventListener('click', () => {
+if (closeElem) {
+    closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+}
 
-
-
-document.addEventListener("DOMContentLoaded", () => {
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
+});
 
     const dots = document.querySelectorAll(".journey__dot");
     const panels = document.querySelectorAll(".journey__panel");
