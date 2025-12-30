@@ -10,6 +10,7 @@ export default defineConfig({
 			input: {
 				main: resolve(__dirname, "index.html"),
 				blog: "blog.html",
+				ebook: "ebook.html",
 			},
 		},
 	},
