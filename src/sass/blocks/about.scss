@@ -129,7 +129,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 0.9fr 1fr;
-        height: 100%;
+        grid-template-rows: 0.6fr 1fr; 
         margin-top: 200px;
         margin-left: 50px;
         column-gap: 20px;
