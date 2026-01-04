@@ -1,0 +1,118 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.author {
+    margin-top: 90px;
+    padding-bottom: 300px;
+    &__title {
+        text-align: center;
+        color: $dark;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 60px; 
+        margin-bottom: 16px;
+    }
+    &__wrapper {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        border-radius: 4px;
+        display: flex;
+        box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
+    }
+    &__descr {
+        position: absolute;
+        margin-top: 88px;
+        left: 600px;
+    }
+    &__role {
+        color: $ui-active;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    &__name {
+        margin-top: 6px;
+        color: $dark;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 28px; 
+    }
+    &__divider {
+        @include divider;
+        width: 40px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    &__text {
+        max-width: 360px;
+        margin-top: 18px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__img {
+        margin-left: 83px;
+        margin-top: 40px;
+    }
+    &__btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 12px;
+        gap: 25px;
+        &-play {
+            @include anim_btn-blue;
+        }
+        &-sign {
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .author {
+        &__wrapper {
+            max-width: 996px;
+        }
+        &__descr {
+            left: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .author {
+        &__descr {
+            left: 430px;
+        }
+        &__img {
+            margin-left: 40px;
+        }
+        &__text{
+            padding-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .author {
+        &__wrapper {
+            flex-direction: column;
+            max-width: 600px;
+        }
+        &__descr {
+            margin-top: 0;
+            position: static;
+            padding: 20px 20px;
+        }
+        &__img {
+            margin-left: 20px;
+        }
+    }
+}
