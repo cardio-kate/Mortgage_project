@@ -3,7 +3,6 @@
 
 .author {
     margin-top: 90px;
-    padding-bottom: 300px;
     &__title {
         text-align: center;
         color: $dark;
@@ -21,9 +20,8 @@
         box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
     }
     &__descr {
-        position: absolute;
         margin-top: 88px;
-        left: 600px;
+        margin-left: 65px;
     }
     &__role {
         color: $ui-active;
@@ -81,7 +79,7 @@
             max-width: 996px;
         }
         &__descr {
-            left: 500px;
+            margin-left: 55px;
         }
     }
 }
@@ -89,7 +87,7 @@
 @media screen and (max-width: 1200px) {
     .author {
         &__descr {
-            left: 430px;
+            margin-left: 30px;
         }
         &__img {
             margin-left: 40px;
@@ -104,15 +102,14 @@
     .author {
         &__wrapper {
             flex-direction: column;
-            max-width: 600px;
+            max-width: 500px;
         }
         &__descr {
-            margin-top: 0;
-            position: static;
+            margin: 0 auto;
             padding: 20px 20px;
         }
         &__img {
-            margin-left: 20px;
+            margin: 0 auto;
         }
     }
 }
