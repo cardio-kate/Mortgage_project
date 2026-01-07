@@ -1,0 +1,115 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.touch {
+    margin-top: 140px;
+    margin-bottom: 95px;
+    &__wrapper {
+        display: flex;   
+        justify-content: space-between; 
+        gap: 64px;   
+        padding: 0 70px; 
+    }
+    &__title {
+        margin-top: 37px;
+        color: $dark;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 60px; 
+    }
+    &__text {
+        max-width: 422px;
+        margin-top: 18px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__divider {
+        @include divider;
+        width: 486px;
+        margin-top: 135px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    &__cat {
+        width: 690px;
+        height: 402px;
+        object-fit: cover;
+    }
+    &__btn {
+        margin-top: 35px;
+        display: flex;
+        gap: 24px;
+    }
+    &__btn-get {
+        @include btn-get;
+    }
+    &__btn-sched {
+        @include btn-sched;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .touch {
+    &__wrapper {
+        padding: 0 30px; 
+    }
+}
+}
+
+@media screen and (max-width: 1200px) {
+    .touch {
+    &__wrapper {
+        padding: 0 50px; 
+        gap: 34px;  
+    }
+    &__divider {
+        width: 330px;
+        margin-top: 95px;
+    }
+    &__title {
+        margin-top: 0;
+    }
+    &__text {
+        max-width: 330px;
+    }
+    &__btn {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+}
+
+@media screen and (max-width: 768px) {
+    .touch {
+    &__wrapper {
+        flex-wrap: wrap;
+        padding: 0; 
+        gap: 20px;  
+    }
+    &__descr {
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__divider {
+        width: 270px;
+        margin-top: 55px;
+        margin-left: auto;
+    }
+    &__title {
+        margin-top: 0;
+        font-size: 30px;
+    }
+    &__text {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+    &__img {
+        margin: 0 auto;
+    }
+    &__btn {
+        justify-content: center;
+    }
+}
+}
