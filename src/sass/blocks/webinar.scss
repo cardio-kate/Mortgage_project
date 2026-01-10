@@ -1,0 +1,196 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *; 
+
+.webinar {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 550px;
+        right: 0;
+        height: 535px;
+        border-radius: 4px;
+        background: linear-gradient(309deg, #126893 8.21%, #278FB4 100%);
+    }
+    &__logo {
+        display: block;
+        margin-left: calc(30px + 0.4583333 * (100vw - 1440px));
+        padding-top: 30px;
+    }
+    &__wrapper {
+        margin-left: calc(30px + 0.4583333 * (100vw - 1440px));
+        display: flex;
+        gap: 60px;
+    }
+    &__title {
+        margin-top: 103px;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px; 
+    }
+    &__subtitle {
+        margin-top: 13px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+    &__text {
+        margin-top: 30px;
+        max-width: 478px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px; 
+    }
+    &__subscribe {
+        margin-top: 29px;
+        display: flex;
+        &-input {
+            width: 350px;
+            padding: 18px 20px;
+            border-radius: 4px;
+            border: 1px solid rgba(151, 151, 151, 0.2);
+            font-size: 16px;
+            font-weight: 300;
+            background: #fff;
+            &:focus {
+			outline: 1px solid $dark;
+            }
+            &:focus:invalid {
+            outline: 1px solid rgb(223, 4, 4);
+            }
+        }
+        &-btn {
+            padding: 18px 33px;
+            border: none;
+            border-radius: 4px;
+            background: $ui-active;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 700; 
+        }
+    }
+    &__video {
+        position: relative;
+    }
+    &__photo {
+        margin-top: 15px;
+        width: 648px;
+    }
+    &__btn {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 190px;
+        left: 38%;
+        gap: 25px;
+        &-play {
+            @include anim_btn-blue;
+        }
+        &-sign {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .webinar {
+        &__logo, &__wrapper {
+            margin-left: calc(30px + 0.083333 * (1440px - 100vw));
+        }
+        &__photo {
+            min-width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .webinar {
+        &::before {
+            width: 38%;
+            height: 520px;
+        }
+        &__logo {
+            margin-left: 65px;
+        }
+        &__wrapper {
+            margin-left: 50px;
+            gap: 10px;
+        }
+        &__title {
+            margin-top: 80px;
+        }
+        &__text {
+            max-width: 350px;
+        }
+        &__subscribe {
+                margin-top: 20px;
+            &-input {
+                width: 230px;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            &-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+        &__photo {
+            margin-top: clamp(5px,calc(5px + (85 - 5) * ((1200px - 100vw) / (1200 - 769))),85px);
+            min-width: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .webinar {
+        &::before {
+            width: 38%;
+            height: clamp(300px,calc(300px + (400 - 300) * ((100vw - 375px) / (768 - 375))),400px);
+        }
+        &__wrapper {
+            margin-left: 0;
+            flex-wrap: wrap-reverse;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        &__video {
+            width: 100%;
+        }
+        &__title {
+            margin-top: 0;
+            font-size: 30px;
+            line-height: 36px;
+        }
+        &__text {
+            max-width: 500px;
+        }
+        &__photo {
+            margin: 0 auto;
+            width: 450px;
+        }
+        &__btn {
+            gap: 18px;
+            top: 48%;
+            left: 35%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .webinar {
+        &__video {
+            margin-top: 13px;
+        }
+        &__text {
+            margin-top: 16px;
+        }
+        &__subscribe {
+            &-input {
+                max-width: 200px;
+            }
+        }
+    }
+}
