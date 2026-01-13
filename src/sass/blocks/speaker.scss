@@ -1,7 +1,7 @@
 @use "/src/sass/base/variables.scss" as *;
 @use "/src/sass/base/mixins.scss" as *;
 
-.author {
+.speaker {
     margin-top: 90px;
     &__title {
         text-align: center;
@@ -74,7 +74,7 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .author {
+    .speaker {
         &__wrapper {
             max-width: 996px;
         }
@@ -85,7 +85,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .author {
+    .speaker {
         &__descr {
             margin-left: 30px;
         }
@@ -99,7 +99,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .author {
+    .speaker {
         &__wrapper {
             flex-direction: column;
             max-width: 500px;
