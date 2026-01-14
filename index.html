@@ -1,49 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website for NAFfirm" />
 	<meta name="author" content="Awesome student" />
-    <title>Mortgage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title><%= title %></title>
+    <%- include('src/templates/head.html') %>
 </head>
 <body>
-<div class="menu">
-    <div class="menu__block">
-        <div class="menu__close">
-            <div class="menu__close-touch">
-                <svg width="12" height="12" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 
-                -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 
-                0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 
-                26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 
-                28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 
-                28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
-                </svg>
-            </div>
-            <img src="/src/icons/logo.svg" alt="logo">
-        </div>
-        <nav>
-            <ul class="menu__list">
-                <li><a href="index.html#heroes" class="menu__link">Your teachers</a></li>
-                <li><a href="index.html#journey" class="menu__link">Your mortgage journey</a></li>
-                <li><a href="index.html#reviews" class="menu__link">What our customers say</a></li>
-                <li><a href="blog.html" class="menu__link">Blog</a></li>
-                <li><a href="ebook.html" class="menu__link">Ebook</a></li>
-                <li><a href="webinar.html" class="menu__link">Webinar</a></li>
-            </ul>
-        </nav>
-        <div class="menu__divider"></div>
-        <div class="menu__buttons">
-            <button class="menu__btn-get">Get started</button>
-            <button class="menu__btn-sched">Schedule a time</button>
-        </div>
-    </div>
-    <div class="menu__overlay"></div>
-</div>
+    <%- include('src/templates/menu.html') %>
 <main>
 <section class="promo">
     <div class="hamburger"><span></span><span></span><span></span></div>
@@ -464,60 +428,7 @@
     </div>
 </section>
 </main>
-<footer class="footer">
-    <div class="container">
-        <div class="footer__wrapper">
-            <div class="footer__top">
-                <img src="/src/icons/logo.svg" alt="logo" class="footer__logo">
-                <button class="footer__btn">Schedule a time</button>
-            </div>
-            <hr class="footer__divider">
-            <div class="footer__middle">
-                <div class="footer__middle-info">
-                    <h4 class="footer__subtitle">Contact us</h4>
-                        <ul class="footer__list">
-                            <address class="footer__address">14511 Myford Road, Suite 100, Tustin, CA 92780</address>
-                            <li><a href="tel:8004502010" class="footer__link">800-450-2010</a></li>
-                            <li><a href="mailto:customerservice@nafinc.com" class="footer__link">customerservice@nafinc.com</a></li>
-                        </ul>
-                </div>
-                <div class="footer__middle-pages">
-                    <nav class="footer__nav">
-                        <h4 class="footer__subtitle">Education</h4>
-                        <ul class="footer__list">
-                            <li><a href="blog.html" class="footer__link">Blog</a></li>
-                            <li><a href="#" class="footer__link">Ebook</a></li>
-                            <li><a href="#" class="footer__link">Webinar</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer__middle-terms">
-                    <nav class="footer__nav">
-                        <h4 class="footer__subtitle">Legal</h4>
-                        <ul class="footer__list">
-                            <li><a href="#" class="footer__link">Terms of use</a></li>
-                            <li><a href="#" class="footer__link">Privacy policy</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer__middle-descr">
-                    <p class="footer__text">New American Funding makes Customer Service our number one priority. We encourage you to call our Corporate Customer Service 
-                        department at 800-450-2010 ext. 7100 between 8 am and 5:00 pm Pacific or email us anytime at customerservice@nafinc.com 
-                        for any complaint resolution you may have regarding the origination of your loan.
-                    </p>
-                    <p class="footer__text-web">This site is not authorized by the New York State Department of Financial Services. No mortgage solicitation activity 
-                        or loan applications for properties located in the State of New York can be facilitated through this site.
-                        Read more at https://www.newamericanfunding.com</p>
-                </div>
-            </div>
-            <hr class="footer__divider">
-            <div class="footer__bottom">
-                <div class="footer__copyright">If you received a letter from New American Funding and would like to be removed from our mailing list, please call 800-450-2010.
-                © 2018 Broker Solutions, Inc. DBA New American Funding. All Rights Reserved.</div>
-            </div>
-        </div>
-    </div>
-</footer>
+<%- include('src/templates/footer.html') %>
 <script type="module" src="/src/js/script.js"></script>
 </body>
 </html>
