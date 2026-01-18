@@ -1,0 +1,41 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.preview {
+    margin-top: 80px;
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 646px;
+    }
+    &__title {
+        color: $dark;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 60px; 
+    }
+    &__descr {
+        margin-top: 10px;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    &__article {
+        &-title {
+            margin-top: 50px;
+            color: $dark;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 28px; 
+        }
+        &-text {
+            margin-top: 23px;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px; 
+        }
+        &-img {
+            margin-top: 28px;
+        }
+    }
+}
