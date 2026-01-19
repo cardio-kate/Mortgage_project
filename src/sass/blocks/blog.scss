@@ -1,0 +1,161 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.blog {
+    margin-bottom: 155px;
+    &__title {
+        margin-top: 117px;
+        text-align: center;
+        color: $dark;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36px; 
+    }
+    &__wrapper {
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 397px));
+        gap: 25px;
+        justify-content: center;
+    }
+    &__article {
+        display: block;
+        padding: 28px 32px 32px 28px;
+        border-radius: 4px;
+        box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
+        text-decoration: none;
+        cursor: pointer;
+
+        transition: 
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+        @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            box-shadow: 0 27px 58px 0 rgba(0, 84, 114, 0.38);
+            background-color: $ui-active;
+            .blog__headline-small {
+                color: #fff;
+            }
+            .blog__text {
+                color: rgba(255, 255, 255, 0.7);
+            }
+            .blog__divider-small {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            .blog__footer-author {
+                color: #fff;
+            }
+            .blog__tag-small,
+            .blog__footer-mark {
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+    }
+    &__divider-small {
+        width: 260px;
+        @include divider;
+        margin-left: 0;
+        margin-top: 21px;
+        margin-bottom: 0;
+    }
+    &__text {
+        margin-top: 19px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px; 
+        max-width: 308px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    &__tag-small {
+        color: $ui-active;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    &__headline-small {
+        margin-top: 83px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 28px;
+        color: $dark;
+    }
+    &__footer {
+        margin-top: 23px;
+        display: flex;
+        gap: 12px;
+        &-img, &-photo {
+            background-repeat: no-repeat;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+        &-photo {
+            background: url("/src/img/master_2.jpg");
+            background-size: contain;
+        }
+        &-img {
+            background: url("/src/img/educator_2.jpg");
+            background-size: cover;
+        }
+        &-names {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            gap: 4px;
+        }
+        &-author {
+            color: $dark;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px; 
+        }
+        &-mark {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px; 
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .blog {
+        &__wrapper {
+            margin-left: 0;
+            padding: 0 50px;
+            grid-template-columns: repeat(2, minmax(0, 517px));
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog {
+        &__title {
+            font-size: 30px;
+        }
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+        }
+        &__article {
+            padding: 24px;
+        }
+        &__divider-small {
+            width: 90%;
+        }
+        &__text {
+            max-width: 70%;
+            margin-top: 10px;
+            line-height: 22px;
+        }
+        &__headline-small {
+            font-size: 25px;
+            margin-top: 60px;
+        }
+        &__footer {
+            margin-top: 15px;
+        }
+    }
+}

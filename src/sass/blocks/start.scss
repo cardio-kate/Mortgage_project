@@ -19,7 +19,7 @@
     }
     &__wrapper {
         max-width: 434px;
-        margin-left: 324px;
+        margin: 0 auto;
     }
     &__title {
         margin-top: 205px;
@@ -41,7 +41,10 @@
     .start {
     &__logo {
         margin-left: 30px;
-        }
+    }
+    &__wrapper {
+        margin-left: 324px;
+    }
     }
 }
 
