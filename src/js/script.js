@@ -79,6 +79,8 @@ menuLinks.forEach(link => {
     const btnRight = document.querySelector('.reviews__btn-right');
     const currentNumber = document.querySelector('.reviews__number-current');
 
+    if (!btnLeft || !btnRight) return;
+
     let pageIndex = 0;
     let dotIndex = 0;  
 
