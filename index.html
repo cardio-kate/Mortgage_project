@@ -10,15 +10,15 @@
     <%- include('src/templates/menu.html') %>
 <main>
 <section class="promo">
-    <div class="hamburger"><span></span><span></span><span></span></div>
+    <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="siteMenu"><span></span><span></span><span></span></button>
     <img src="/src/img/Mask.jpg" alt="video" class="promo__video">
     <div class="container">
         <div class="promo__wrapper">
             <div class="promo__media">
                 <div class="promo__video-title">Why a mortgage is so much more than just a rate?</div>
                 <div class="promo__btn-wrap">
-                        <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank">
-                            <button class="promo__btn-play"><span class="promo__btn-icon"></span></button>
+                        <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank" class="promo__btn-play">
+                            <span class="promo__btn-icon"></span>
                         </a>
                     <time class="promo__btn-time" datetime="PT34S">0:34</time>
                 </div>
@@ -49,8 +49,8 @@
                 <div class="heroes__card-top">
                     <img src="/src/img/master.jpg" class="heroes__card-img"></img>
                     <div class="heroes__btn-wrap">
-                        <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank">
-                            <button class="heroes__btn-play"><span class="heroes__btn-icon"></span></button>
+                        <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank" class="heroes__btn-play">
+                            <span class="heroes__btn-icon"></span>
                         </a>
                     <div class="heroes__card-sign">Meet Justin</div>
                 </div>
@@ -96,8 +96,8 @@
                 <div class="heroes__card-top">
                     <img src="/src/img/educator.jpg" alt="educator" class="heroes__card-img">
                     <div class="heroes__btn-wrap">
-                        <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank">
-                            <button class="heroes__btn-play"><span class="heroes__btn-icon"></span></button>
+                        <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank" class="heroes__btn-play">
+                            <span class="heroes__btn-icon"></span>
                         </a>
                     <div class="heroes__card-sign">Meet Scott</div>
                 </div>
@@ -181,8 +181,8 @@
                 <div class="journey__video-top">
                     <div class="journey__video-back">
                         <div class="journey__video-media">
-                            <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank">
-                                <button class="journey__btn-video"><span class="journey__btn-icon"></span></button>
+                            <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank" class="journey__btn-video">
+                                <span class="journey__btn-icon"></span>
                             </a>
                             <h5 class="journey__video-title">The difference between «fixed rate» and «adjustable»</h5>
                             <time class="journey__video-time" datetime="PT29S">0:29</time>
@@ -192,8 +192,8 @@
                     <div class="journey__video-bottom">
                         <div class="journey__video-under">
                             <div class="journey__video-media">
-                                <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank">
-                                    <button class="journey__btn-video"><span class="journey__btn-icon"></span></button>
+                                <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank" class="journey__btn-video">
+                                    <span class="journey__btn-icon"></span>
                                 </a>
                                 <h5 class="journey__video-title">What are points and credits?</h5>
                                 <time class="journey__video-time" datetime="PT27S">0:27</time>
@@ -203,8 +203,8 @@
                     <div class="journey__video-bottom">
                         <div class="journey__video-under">
                             <div class="journey__video-media">
-                                <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank">
-                                    <button class="journey__btn-video"><span class="journey__btn-icon"></span></button>
+                                <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank" class="journey__btn-video">
+                                    <span class="journey__btn-icon"></span>
                                 </a>
                                 <h5 class="journey__video-title">Why a mortgage is so much more than just a rate?</h5>
                                 <time class="journey__video-time" datetime="PT34S">0:34</time>
@@ -229,9 +229,7 @@
         <hr class="journey__modal-div">
         <div class="journey__modal-footer">
             <span class="journey__modal-question">Have a question?</span>
-            <a href="#">
-                <button class="journey__modal-btn">Let’s talk</button>
-            </a>
+            <button class="journey__modal-btn">Let’s talk</button>
         </div>
     </div>
 </dialog>
@@ -278,8 +276,8 @@
                     <span class="reviews__number-total">/10</span>
                 </div>
                 <div class="reviews__media-btns">
-                    <a href="#"><button class="reviews__btn-left"></button></a>
-                    <a href="#"><button class="reviews__btn-right"></button></a>
+                    <button class="reviews__btn-left"></button>
+                    <button class="reviews__btn-right"></button>
                 </div>
                 <div class="reviews__page">
                     <div class="reviews__page-left active">
@@ -417,9 +415,7 @@
                     </div>
                     <hr class="education__resources-divider">
                     <div class="education__resources-action">
-                        <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank" class="education__resources-link" >
-                            <button class="education__resources-view"></button>
-                        </a>
+                        <a href="https://www.youtube.com/watch?v=7YSUSmrdlvs&list=RD7YSUSmrdlvs&start_radio=1" target="_blank" class="education__resources-link education__resources-view"></a>
                     </div>
                 </div>
                 </div>

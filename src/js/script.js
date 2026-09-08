@@ -11,18 +11,20 @@ if (!hamburger || !menu) return;
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
+    hamburger.setAttribute('aria-expanded', 'true');
 });
 
-if (closeElem) {
-    closeElem.addEventListener('click', () => {
+function closeMenu() {
     menu.classList.remove('active');
-});
+    hamburger.setAttribute('aria-expanded', 'false');
+}
+
+if (closeElem) {
+    closeElem.addEventListener('click', closeMenu);
 }
 
 menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-    menu.classList.remove('active');
-});
+    link.addEventListener('click', closeMenu);
 });
 
     const dots = document.querySelectorAll(".journey__dot");
@@ -77,7 +79,7 @@ menuLinks.forEach(link => {
     const btnRight = document.querySelector('.reviews__btn-right');
     const currentNumber = document.querySelector('.reviews__number-current');
 
-    let pageIndex = 0; 
+    let pageIndex = 0;
     let dotIndex = 0;  
 
     const formatNumber = (num) => String(num).padStart(2, '0');
