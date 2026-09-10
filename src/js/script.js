@@ -32,10 +32,14 @@ menuLinks.forEach(link => {
 
     function activateStep(step) {
         dots.forEach(dot => {
-            dot.classList.toggle("active", dot.dataset.step === step);
+            const isActive = dot.dataset.step === step;
+            dot.classList.toggle("active", isActive);
+            dot.setAttribute("aria-current", isActive ? "step" : "false");
         });
         panels.forEach(panel => {
-            panel.classList.toggle("active", panel.dataset.step === step);
+            const isActive = panel.dataset.step === step;
+            panel.classList.toggle("active", isActive);
+            panel.setAttribute("aria-current", isActive ? "step" : "false");
         });
     }
 
@@ -48,6 +52,13 @@ menuLinks.forEach(link => {
     panels.forEach(panel => {
         panel.addEventListener("click", () => {
             activateStep(panel.dataset.step);
+        });
+
+        panel.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                activateStep(panel.dataset.step);
+            }
         });
     });
 
@@ -92,7 +103,9 @@ menuLinks.forEach(link => {
         });
 
         pagDots.forEach((dot, i) => {
-            dot.classList.toggle('active', i === dotIndex);
+            const isActive = i === dotIndex;
+            dot.classList.toggle('active', isActive);
+            dot.setAttribute('aria-current', isActive ? 'true' : 'false');
         });
 
         if (currentNumber) {
