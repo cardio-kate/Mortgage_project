@@ -22,9 +22,7 @@ export default defineConfig({
 		host: true,
 	},
 	plugins: [
-		ViteEjsPlugin({
-			title: "Mortgage",
-		}),
+		ViteEjsPlugin(),
 		FullReload(['src/templates/**/*.html' ]),
 	]
 });
