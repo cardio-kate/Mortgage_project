@@ -4,27 +4,77 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
+const menuBlock = document.querySelector('.menu__block');
+const menuOverlay = document.querySelector('.menu__overlay');
 const closeElem = document.querySelector('.menu__close-touch');
 const menuLinks = document.querySelectorAll('.menu__link');
 
-if (!hamburger || !menu) return; 
+if (!hamburger || !menu || !menuBlock) return;
 
-hamburger.addEventListener('click', () => {
+function getFocusable() {
+    return Array.from(
+        menuBlock.querySelectorAll('a[href], button:not([disabled])')
+    );
+}
+
+function openMenu() {
     menu.classList.add('active');
+    document.body.style.overflow = 'hidden';
     hamburger.setAttribute('aria-expanded', 'true');
-});
+
+    // wait until menu becomes visible, otherwise focus doesn't work
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            const focusable = getFocusable();
+            if (focusable.length) focusable[0].focus();
+        });
+    });
+}
 
 function closeMenu() {
     menu.classList.remove('active');
+    document.body.style.overflow = '';
     hamburger.setAttribute('aria-expanded', 'false');
+    hamburger.focus();
 }
+
+hamburger.addEventListener('click', openMenu);
 
 if (closeElem) {
     closeElem.addEventListener('click', closeMenu);
 }
 
+if (menuOverlay) {
+    menuOverlay.addEventListener('click', closeMenu);
+}
+
 menuLinks.forEach(link => {
     link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('keydown', (e) => {
+    if (!menu.classList.contains('active')) return;
+
+    if (e.key === 'Escape') {
+        closeMenu();
+        return;
+    }
+
+    if (e.key === 'Tab') {
+        const focusable = getFocusable();
+        if (!focusable.length) return;
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+        }
+    }
 });
 
     const dots = document.querySelectorAll(".journey__dot");
