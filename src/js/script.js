@@ -116,7 +116,7 @@ document.addEventListener('keydown', (e) => {
     const section = document.querySelector(".journey");
 
     if (modal && section) {
-        let shown = false;
+        const modalClose = modal.querySelector(".journey__modal-close");
 
         function checkVisibility() {
             const rect = section.getBoundingClientRect();
@@ -125,13 +125,19 @@ document.addEventListener('keydown', (e) => {
             const scrolled = windowHeight - rect.top;
             const progress = scrolled / sectionHeight;
 
-            if (progress > 0.7 && !shown) {
+            if (progress > 0.7) {
                 modal.classList.add("show");
-                shown = true;
+                window.removeEventListener("scroll", checkVisibility);
             }
         }
 
         window.addEventListener("scroll", checkVisibility);
+
+        if (modalClose) {
+            modalClose.addEventListener("click", () => {
+                modal.classList.remove("show");
+            });
+        }
     }
 
     const pages = document.querySelectorAll('.reviews__page-left');

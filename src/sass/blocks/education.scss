@@ -29,6 +29,12 @@
             border: none;
             padding: 0;
             cursor: pointer;
+            transition: color 0.3s ease;
+            @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                color: $dark-blue;
+            }
+            }
             &::after {
             content: '';
             position: absolute;

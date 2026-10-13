@@ -13,6 +13,12 @@
         justify-content: center;
         align-items: center;
         animation: pulse 3s linear infinite;
+        transition: background-color 0.3s ease;
+        @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            background-color: $dark-blue;
+        }
+        }
     &::before {
         content: "";
         position: absolute;
@@ -66,6 +72,13 @@
     background: transparent;
     padding: 18px 32px;
     cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    @media (hover: hover) and (pointer: fine) {
+    &:hover {
+        border-color: $ui-active;
+        color: $ui-active;
+    }
+    }
 }
 
 @mixin btn-get {
@@ -83,6 +96,12 @@
     font-weight: 700;
     cursor: pointer;
     position: relative; 
+    transition: background-color 0.3s ease;
+    @media (hover: hover) and (pointer: fine) {
+    &:hover {
+        background-color: $dark-blue;
+    }
+    }
     &::after {
         content: '';
         flex-shrink: 0;
@@ -112,6 +131,13 @@
     background: transparent;
     padding: 10px 12px;
     cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    @media (hover: hover) and (pointer: fine) {
+    &:hover {
+        border-color: $ui-active;
+        color: $ui-active;
+    }
+    }
 }
 
 @mixin btn-get-mini {
@@ -129,6 +155,12 @@
     font-weight: 700;
     cursor: pointer;
     position: relative; 
+    transition: background-color 0.3s ease;
+    @media (hover: hover) and (pointer: fine) {
+    &:hover {
+        background-color: $dark-blue;
+    }
+    }
     &::after {
         content: '';
         flex-shrink: 0;
@@ -155,6 +187,12 @@
     cursor: pointer;
     position: relative;
     box-shadow: 0 0 0 8px rgba(79, 143, 177, 0.4);
+    transition: background-color 0.3s ease;
+    @media (hover: hover) and (pointer: fine) {
+    &:hover {
+        background-color: $dark-blue;
+    }
+    }
     &::after {
         content: '';
         width: 14px;
@@ -181,6 +219,12 @@
     position: relative;
     box-shadow: 0 0 0 8px rgba(79, 143, 177, 0.35);
     animation: pulse 3s linear infinite;
+    transition: background-color 0.3s ease;
+    @media (hover: hover) and (pointer: fine) {
+    &:hover {
+        background-color: $dark-blue;
+    }
+    }
     &::after {
         content: '';
         width: 22px;

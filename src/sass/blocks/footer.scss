@@ -4,6 +4,9 @@
 .footer {
     margin-top: 96px;
     background-color: $dark-blue;
+    :focus-visible {
+        outline-color: #fff;
+    }
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -24,6 +27,12 @@
         font-size: 16px;
         font-weight: 700;
         cursor: pointer;
+        transition: background-color 0.3s ease;
+        @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        }
     }
     &__divider {
         @include divider;
@@ -85,6 +94,14 @@
         font-weight: 400;
         line-height: 24px; 
         text-decoration: none;
+    }
+    &__link {
+        transition: color 0.3s ease;
+        @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            color: #fff;
+        }
+        }
     }
     &__bottom {
         padding: 43px 0 35px;

@@ -220,10 +220,11 @@
     bottom: 0;
     border: none;
     opacity: 0;
+    visibility: hidden;
     z-index: 10;
     background: #fff;
     transform: translateX(100%);
-    transition: transform .45s ease, opacity .3s ease;
+    transition: transform .45s ease, opacity .3s ease, visibility .45s;
     border-radius: 4px 48px 4px 4px;
     &::backdrop {
         display: none;
@@ -273,6 +274,28 @@
         border-radius: 4px;
         font-size: 12px;
         cursor: pointer;
+        transition: background-color 0.3s ease;
+        @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            background-color: $dark-blue;
+        }
+        }
+    }
+    &-close {
+        position: absolute;
+        top: -12px;
+        left: -12px;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 4px 12px 0 rgba(25, 78, 96, 0.2);
+        cursor: pointer;
     }
     &-avatar {
         text-align: center;
@@ -289,7 +312,8 @@
 }
 &__modal.show {
     transform: translateX(0);
-    opacity: 0;
+    opacity: 1;
+    visibility: visible;
     margin-right: 50px;
 }   
 }

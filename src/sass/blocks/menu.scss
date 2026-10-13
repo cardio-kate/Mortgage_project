@@ -80,6 +80,12 @@
         font-size: 22px;
         line-height: 28px; 
         text-decoration: none;
+        transition: color 0.3s ease;
+        @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            color: $ui-active;
+        }
+        }
     }
     &__divider {
         @include divider;

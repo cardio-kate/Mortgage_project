@@ -36,6 +36,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: transform 0.3s ease;
+        @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            transform: scale(1.1);
+        }
+        }
         &::before {
             content: "";
             position: absolute;
@@ -67,6 +73,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: transform 0.3s ease;
+        @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            transform: scale(1.1);
+        }
+        }
         &::before {
             content: "";
             position: absolute;
@@ -163,6 +175,12 @@
                 color: $ui-active;
                 font-size: 14px;
                 font-weight: 700;
+                transition: color 0.3s ease;
+                @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    color: $dark-blue;
+                }
+                }
                 &::after {
                 content: "";
                 position: absolute;
