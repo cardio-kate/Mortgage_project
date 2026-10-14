@@ -2,6 +2,26 @@ import "/src/sass/style.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
 
+const subscribeForms = document.querySelectorAll('.about__subscribe, .webinar__subscribe');
+
+subscribeForms.forEach(form => {
+    const message = form.querySelector('[role="status"]');
+    let hideTimer;
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        form.reset();
+        message.textContent = 'Thanks! Check your inbox.';
+        message.classList.add('active');
+
+        clearTimeout(hideTimer);
+        hideTimer = setTimeout(() => {
+            message.classList.remove('active');
+        }, 4000);
+    });
+});
+
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 const menuBlock = document.querySelector('.menu__block');
