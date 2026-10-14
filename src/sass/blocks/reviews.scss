@@ -237,11 +237,20 @@
         max-width: 960px;
         bottom: 84px;
         border-radius: 4px;
-        &-left, &-right {
+        &-item {
+            display: none;
             padding: 24px 32px;
             background: #FFF;
             border-radius: 4px;
             box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.33);
+            &.active {
+                display: block;
+                order: 1;
+            }
+            &.next {
+                display: block;
+                order: 2;
+            }
         }
         &-top {
             display: flex;
@@ -453,11 +462,11 @@
         &__page {
         left: 0;
         padding: 5%;
-        &-right {
-            display: none;
-        }
-        &-left {
+        &-item {
             padding: 18px 12px;
+            &.next {
+                display: none;
+            }
         }
         &-name {
             margin-top: 5px;

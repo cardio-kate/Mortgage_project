@@ -140,7 +140,7 @@ document.addEventListener('keydown', (e) => {
         }
     }
 
-    const pages = document.querySelectorAll('.reviews__page-left');
+    const pages = document.querySelectorAll('.reviews__page-item');
     const pagDots = document.querySelectorAll('.reviews__dot'); 
     const btnLeft = document.querySelector('.reviews__btn-left');
     const btnRight = document.querySelector('.reviews__btn-right');
@@ -149,31 +149,32 @@ document.addEventListener('keydown', (e) => {
     if (!btnLeft || !btnRight) return;
 
     let pageIndex = 0;
-    let dotIndex = 0;  
 
     const formatNumber = (num) => String(num).padStart(2, '0');
 
     function updateUI() {
+        const nextIndex = (pageIndex + 1) % pages.length;
+
         pages.forEach((page, i) => {
             page.classList.toggle('active', i === pageIndex);
+            page.classList.toggle('next', i === nextIndex);
         });
 
         pagDots.forEach((dot, i) => {
-            const isActive = i === dotIndex;
+            const isActive = i === pageIndex;
             dot.classList.toggle('active', isActive);
             dot.setAttribute('aria-current', isActive ? 'true' : 'false');
         });
 
         if (currentNumber) {
-            currentNumber.textContent = formatNumber(dotIndex + 1);
+            currentNumber.textContent = formatNumber(pageIndex + 1);
         }
     }
 
     btnRight.addEventListener('click', (e) => {
         e.preventDefault();
 
-        dotIndex = (dotIndex + 1) % pagDots.length;
-        if (pages.length > 1) pageIndex = dotIndex % pages.length;
+        pageIndex = (pageIndex + 1) % pages.length;
 
         updateUI();
     });
@@ -181,16 +182,14 @@ document.addEventListener('keydown', (e) => {
     btnLeft.addEventListener('click', (e) => {
         e.preventDefault();
 
-        dotIndex = (dotIndex - 1 + pagDots.length) % pagDots.length;
-        if (pages.length > 1) pageIndex = dotIndex % pages.length;
+        pageIndex = (pageIndex - 1 + pages.length) % pages.length;
 
         updateUI();
     });
 
     pagDots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
-            dotIndex = index;
-            if (pages.length > 1) pageIndex = index;
+            pageIndex = index;
 
             updateUI();
         });
