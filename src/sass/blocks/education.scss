@@ -18,7 +18,7 @@
         color: $dark;
         font-size: 36px;
         font-weight: 700;
-        line-height: 36px; 
+        line-height: 36px;
         margin-bottom: 4px;
         &-list {
             position: relative;
@@ -29,18 +29,18 @@
             text-decoration: none;
             transition: color 0.3s ease;
             @media (hover: hover) and (pointer: fine) {
-            &:hover {
-                color: $dark-blue;
-            }
+                &:hover {
+                    color: $dark-blue;
+                }
             }
             &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 100%;
-            height: 1px;
-            background-color: $ui-active;
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                width: 100%;
+                height: 1px;
+                background-color: $ui-active;
             }
         }
     }
@@ -66,7 +66,8 @@
         text-decoration: none;
         cursor: pointer;
     }
-    &__tag, &__tag-small {
+    &__tag,
+    &__tag-small {
         font-size: 11px;
         font-weight: 700;
         letter-spacing: 2px;
@@ -78,7 +79,8 @@
     &__tag-small {
         color: $ui-active;
     }
-    &__headline, &__headline-small {
+    &__headline,
+    &__headline-small {
         margin-top: 83px;
         font-size: 28px;
         font-weight: 700;
@@ -88,13 +90,14 @@
         }
     }
     &__headline {
-        color: #FFF;
+        color: #fff;
     }
-    &__text-big, &__text {
+    &__text-big,
+    &__text {
         margin-top: 19px;
         font-size: 14px;
         font-weight: 400;
-        line-height: 24px; 
+        line-height: 24px;
     }
     &__text {
         max-width: 308px;
@@ -104,7 +107,8 @@
         width: 394px;
         color: rgba(255, 255, 255, 0.7);
     }
-    &__divider, &__divider-small {
+    &__divider,
+    &__divider-small {
         @include divider;
         margin-left: 0;
         margin-top: 21px;
@@ -113,7 +117,7 @@
     &__divider-small {
         width: 260px;
     }
-    &__divider{
+    &__divider {
         width: 608px;
         background-color: rgba(255, 255, 255, 0.2);
     }
@@ -121,7 +125,8 @@
         margin-top: 23px;
         display: flex;
         gap: 12px;
-        &-img, &-photo {
+        &-img,
+        &-photo {
             background-repeat: no-repeat;
             width: 48px;
             height: 48px;
@@ -145,12 +150,13 @@
             color: $dark;
             font-size: 16px;
             font-weight: 700;
-            line-height: 16px; 
+            line-height: 16px;
         }
-        &-sign, &-mark {
+        &-sign,
+        &-mark {
             font-size: 14px;
             font-weight: 400;
-            line-height: 14px; 
+            line-height: 14px;
         }
         &-sign {
             color: rgba(255, 255, 255, 0.5);
@@ -162,7 +168,7 @@
             color: rgba(255, 255, 255);
             font-size: 16px;
             font-weight: 700;
-            line-height: 16px; 
+            line-height: 16px;
         }
     }
     &__blog-small {
@@ -173,33 +179,33 @@
         text-decoration: none;
         cursor: pointer;
 
-        transition: 
-        box-shadow 0.3s ease,
-        background-color 0.3s ease;
+        transition:
+            box-shadow 0.3s ease,
+            background-color 0.3s ease;
         @media (hover: hover) and (pointer: fine) {
-        &:hover {
-            box-shadow: 0 27px 58px 0 rgba(0, 84, 114, 0.38);
-            background-color: $ui-active;
-            .education__headline-small {
-                color: #fff;
-            }
-            .education__text {
-                color: rgba(255, 255, 255, 0.7);
-            }
-            .education__divider-small {
-                background-color: rgba(255, 255, 255, 0.2);
-            }
-            .education__footer-author {
-                color: #fff;
-            }
-            .education__tag-small,
-            .education__footer-mark {
-                color: rgba(255, 255, 255, 0.5);
+            &:hover {
+                box-shadow: 0 27px 58px 0 rgba(0, 84, 114, 0.38);
+                background-color: $ui-active;
+                .education__headline-small {
+                    color: #fff;
+                }
+                .education__text {
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                .education__divider-small {
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+                .education__footer-author {
+                    color: #fff;
+                }
+                .education__tag-small,
+                .education__footer-mark {
+                    color: rgba(255, 255, 255, 0.5);
+                }
             }
         }
     }
-    }
-    &__resources{
+    &__resources {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -212,7 +218,7 @@
         &-card {
             display: flex;
             flex-direction: column;
-            max-width: 397px;          
+            max-width: 397px;
             aspect-ratio: 397 / 266;
             border-radius: 4px;
             box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
@@ -226,7 +232,7 @@
             display: flex;
             align-items: flex-start;
             gap: 24px;
-            padding: 24px 32px ;
+            padding: 24px 32px;
         }
         &-img {
             margin-top: 4px;
@@ -244,7 +250,7 @@
             color: $dark;
             font-size: 20px;
             font-weight: 700;
-            line-height: 26px; 
+            line-height: 26px;
         }
         &-divider {
             @include divider;
@@ -287,10 +293,10 @@
         }
         &__resources {
             &-wrap {
-            grid-template-columns: repeat(2, minmax(310px, 1fr));
+                grid-template-columns: repeat(2, minmax(310px, 1fr));
             }
             &-divider {
-            width: 70%;
+                width: 70%;
             }
             &-name {
                 font-size: 19px;
@@ -300,8 +306,8 @@
                 margin-left: 39px;
             }
             &-link {
-            margin-left: 41px;
-        }
+                margin-left: 41px;
+            }
         }
     }
 }
@@ -314,15 +320,18 @@
         &__title {
             font-size: 30px;
         }
-        &__divider, &__divider-small {
+        &__divider,
+        &__divider-small {
             width: 90%;
         }
-        &__text, &__text-big {
+        &__text,
+        &__text-big {
             max-width: 70%;
             margin-top: 10px;
             line-height: 22px;
         }
-        &__headline, &__headline-small {
+        &__headline,
+        &__headline-small {
             font-size: 25px;
             margin-top: 60px;
         }
@@ -354,6 +363,20 @@
             }
             &-divider {
                 width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .education {
+        &__resources {
+            width: 100%;
+            &-wrap {
+                grid-template-columns: 1fr;
+            }
+            &-card {
+                aspect-ratio: auto;
             }
         }
     }

@@ -17,35 +17,35 @@
 
 @media screen and (max-width: 1440px) {
     .introduction {
-    &__logo {
-        margin-left: 30px;
-    }
+        &__logo {
+            margin-left: 30px;
+        }
     }
 }
 
 @media screen and (max-width: 1200px) {
     .introduction {
-    &__logo {
-        margin-left: 65px;
-    }
+        &__logo {
+            margin-left: 65px;
+        }
     }
 }
 
 @media screen and (max-width: 768px) {
     .introduction {
-    &__autor {
-    padding-top: 46px;
-    }
-    &__logo {
-        width: 200px;
-    }
+        &__autor {
+            padding-top: 46px;
+        }
+        &__logo {
+            width: 200px;
+        }
     }
 }
 
 @media screen and (max-width: 375px) {
     .introduction {
-    &__logo {
-        width: 170px;
-    }
+        &__logo {
+            width: 170px;
+        }
     }
 }

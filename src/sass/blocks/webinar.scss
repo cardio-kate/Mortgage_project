@@ -1,5 +1,5 @@
 @use "/src/sass/base/variables.scss" as *;
-@use "/src/sass/base/mixins.scss" as *; 
+@use "/src/sass/base/mixins.scss" as *;
 
 .webinar {
     position: relative;
@@ -10,7 +10,7 @@
         right: 0;
         height: 535px;
         border-radius: 4px;
-        background: linear-gradient(309deg, #126893 8.21%, #278FB4 100%);
+        background: linear-gradient(309deg, #126893 8.21%, #278fb4 100%);
     }
     &__logo {
         display: block;
@@ -26,7 +26,7 @@
         margin-top: 103px;
         font-size: 48px;
         font-weight: 700;
-        line-height: 60px; 
+        line-height: 60px;
     }
     &__subtitle {
         margin-top: 13px;
@@ -40,7 +40,7 @@
         color: rgba(0, 0, 0, 0.5);
         font-size: 14px;
         font-weight: 400;
-        line-height: 24px; 
+        line-height: 24px;
     }
     &__subscribe {
         position: relative;
@@ -56,11 +56,11 @@
             font-weight: 300;
             background: #fff;
             &:focus {
-			outline: 1px solid $dark;
-			outline-offset: -1px;
+                outline: 1px solid $dark;
+                outline-offset: -1px;
             }
             &:focus:invalid:not(:placeholder-shown) {
-            outline: 1px solid rgb(223, 4, 4);
+                outline: 1px solid rgb(223, 4, 4);
             }
         }
         &-btn {
@@ -70,15 +70,15 @@
             border: none;
             border-radius: 0 4px 4px 0;
             background: $ui-active;
-            color: #FFF;
+            color: #fff;
             font-size: 16px;
-            font-weight: 700; 
+            font-weight: 700;
             cursor: pointer;
             transition: background-color 0.3s ease;
             @media (hover: hover) and (pointer: fine) {
-            &:hover {
-                background-color: $dark-blue;
-            }
+                &:hover {
+                    background-color: $dark-blue;
+                }
             }
         }
         &-success {
@@ -124,7 +124,8 @@
 
 @media screen and (max-width: 1440px) {
     .webinar {
-        &__logo, &__wrapper {
+        &__logo,
+        &__wrapper {
             margin-left: calc(30px + 0.083333 * (1440px - 100vw));
         }
         &__photo {
@@ -153,7 +154,7 @@
             max-width: 350px;
         }
         &__subscribe {
-                margin-top: 20px;
+            margin-top: 20px;
             &-input {
                 width: 230px;
                 padding: 10px 15px;
@@ -165,7 +166,7 @@
             }
         }
         &__photo {
-            margin-top: clamp(5px,calc(5px + (85 - 5) * ((1200px - 100vw) / (1200 - 769))),85px);
+            margin-top: clamp(5px, calc(5px + (85 - 5) * ((1200px - 100vw) / (1200 - 769))), 85px);
             min-width: auto;
         }
     }
@@ -175,7 +176,7 @@
     .webinar {
         &::before {
             width: 38%;
-            height: clamp(300px,calc(300px + (400 - 300) * ((100vw - 375px) / (768 - 375))),400px);
+            height: clamp(300px, calc(300px + (400 - 300) * ((100vw - 375px) / (768 - 375))), 400px);
         }
         &__wrapper {
             margin-left: 0;
@@ -183,7 +184,8 @@
             justify-content: space-between;
             gap: 40px;
         }
-        &__info, &__video {
+        &__info,
+        &__video {
             width: 100%;
         }
         &__title {

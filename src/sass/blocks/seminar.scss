@@ -8,7 +8,7 @@
         color: $dark;
         font-size: 36px;
         font-weight: 700;
-        line-height: 60px; 
+        line-height: 60px;
     }
     &__wrapper {
         margin-top: 28px;
@@ -36,9 +36,9 @@
         text-align: center;
         font-size: 28px;
         font-weight: 700;
-        line-height: 28px; 
+        line-height: 28px;
     }
-    &__divider{
+    &__divider {
         @include divider;
         width: 40px;
         margin-top: 20px;
@@ -51,7 +51,7 @@
         text-align: center;
         font-size: 14px;
         font-weight: 400;
-        line-height: 24px; 
+        line-height: 24px;
     }
 }
 
@@ -68,14 +68,15 @@
             margin-top: 15px;
             font-size: 20px;
         }
-        &__divider, &__text {
+        &__divider,
+        &__text {
             margin-top: 15px;
         }
         &__item {
-        &-circle {
-            width: 60px;
-            height: 60px;
+            &-circle {
+                width: 60px;
+                height: 60px;
+            }
         }
-    }
     }
 }

@@ -10,7 +10,7 @@
         color: $dark;
         font-size: 36px;
         font-weight: 700;
-        line-height: 60px; 
+        line-height: 60px;
     }
     &__descr {
         margin-top: 10px;
@@ -25,14 +25,14 @@
             color: $dark;
             font-size: 28px;
             font-weight: 700;
-            line-height: 28px; 
+            line-height: 28px;
         }
         &-text {
             margin-top: 23px;
             color: rgba(0, 0, 0, 0.5);
             font-size: 14px;
             font-weight: 400;
-            line-height: 24px; 
+            line-height: 24px;
         }
         &-img {
             margin-top: 28px;
@@ -44,6 +44,6 @@
     .preview {
         &__title {
             font-size: 30px;
-    }
+        }
     }
 }

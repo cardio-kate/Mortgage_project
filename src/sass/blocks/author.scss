@@ -8,7 +8,7 @@
         color: $dark;
         font-size: 36px;
         font-weight: 700;
-        line-height: 60px; 
+        line-height: 60px;
         margin-bottom: 16px;
     }
     &__wrapper {
@@ -35,7 +35,7 @@
         color: $dark;
         font-size: 28px;
         font-weight: 700;
-        line-height: 28px; 
+        line-height: 28px;
     }
     &__divider {
         @include divider;
@@ -78,7 +78,8 @@
         &__wrapper {
             max-width: 996px;
         }
-        &__descr, &__img {
+        &__descr,
+        &__img {
             margin-left: 55px;
         }
     }
@@ -92,7 +93,7 @@
         &__img {
             margin-left: 40px;
         }
-        &__text{
+        &__text {
             padding-right: 10px;
         }
     }

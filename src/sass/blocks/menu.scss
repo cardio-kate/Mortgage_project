@@ -13,7 +13,7 @@
     border: none;
     appearance: none;
     border-radius: 4px;
-    box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.10);
+    box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
     z-index: 10;
     span {
@@ -33,11 +33,11 @@
     z-index: 11;
     visibility: hidden;
     opacity: 0;
-    transition: all .6s;
+    transition: all 0.6s;
     &.active {
         left: 0;
         visibility: visible;
-        opacity: 1;    
+        opacity: 1;
     }
     &__block {
         position: relative;
@@ -46,7 +46,7 @@
         height: 100%;
         padding-left: 44px;
         padding-top: 138px;
-        transition: all .6s;
+        transition: all 0.6s;
         z-index: 10;
     }
     &__close {
@@ -56,7 +56,7 @@
         gap: 40px;
         top: 29px;
         left: 43px;
-        &-touch{
+        &-touch {
             border: none;
             background: none;
             padding: 0;
@@ -78,13 +78,13 @@
         font-weight: 700;
         color: $dark;
         font-size: 22px;
-        line-height: 28px; 
+        line-height: 28px;
         text-decoration: none;
         transition: color 0.3s ease;
         @media (hover: hover) and (pointer: fine) {
-        &:hover {
-            color: $ui-active;
-        }
+            &:hover {
+                color: $ui-active;
+            }
         }
     }
     &__divider {
@@ -118,72 +118,72 @@
 
 @media screen and (max-width: 1200px) {
     .menu {
-    &__block {
-        width: 620px;
+        &__block {
+            width: 620px;
+        }
+        &__list {
+            row-gap: 28px;
+        }
     }
-    &__list {
-        row-gap: 28px;
-    }
-}
 }
 
 @media screen and (max-width: 768px) {
     .menu {
-    &__block {
-        width: 100%;
-        padding-left: 24px;
-        padding-top: 118px;
+        &__block {
+            width: 100%;
+            padding-left: 24px;
+            padding-top: 118px;
+        }
+        &__close {
+            gap: 20px;
+            top: 24px;
+            left: 24px;
+        }
+        &__list {
+            row-gap: 25px;
+            padding-left: 40px;
+        }
+        &__link {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__divider {
+            width: 80%;
+            margin-left: 36px;
+            margin-top: 80px;
+        }
+        &__buttons {
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+            padding-left: 37px;
+        }
+        &__btn-get {
+            @include btn-get-mini;
+        }
+        &__btn-sched {
+            @include btn-sched-mini;
+        }
     }
-    &__close {
-        gap: 20px;
-        top: 24px;
-        left: 24px;
-    }
-    &__list {
-        row-gap: 25px;
-        padding-left: 40px;
-    }
-    &__link {
-        font-size: 18px;
-        line-height: 18px; 
-    }
-    &__divider {
-        width: 80%;
-        margin-left: 36px;
-        margin-top: 80px;
-    }
-    &__buttons {
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 20px;
-        padding-left: 37px;
-    }
-    &__btn-get {
-        @include btn-get-mini;
-    }
-    &__btn-sched {
-        @include btn-sched-mini;
-    }
-}
 }
 
 @media screen and (max-width: 375px) {
     .menu {
-    &__close {
-        gap: 18px;
-        top: 20px;
+        &__close {
+            gap: 18px;
+            top: 20px;
+        }
+        &__list {
+            row-gap: 12px;
+            padding-left: 35px;
+        }
+        &__link {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__buttons {
+            gap: 5px;
+            margin-top: 25px;
+        }
     }
-    &__list {
-        row-gap: 12px;
-        padding-left: 35px;
-    }
-    &__link {
-        font-size: 16px;
-        line-height: 20px; 
-    }
-    &__buttons {
-        gap: 5px;
-        margin-top: 25px;
-    }
-}
 }

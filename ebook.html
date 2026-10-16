@@ -1,114 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta name="description" content="Free eBook: 9 things to know before buying your first home." />
-	<meta name="author" content="Katsiaryna Dauhatseles" />
-    <title>Free eBook</title>
-    <%- include('src/templates/head.html') %>
-</head>
-<body>
-    <%- include('src/templates/menu.html') %>
-<main>
-    <section class="about">
-        <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="siteMenu"><span></span><span></span><span></span></button>
-        <div class="container">
-            <a href="index.html" class="about__logo"><img src="/src/icons/logo.svg" alt="New American Funding home"></a>
-            <div class="about__wrapper">
-                <div class="about__book-wrap">
-                    <img src="/src/img/ebook__big.webp" alt="" class="about__book">
-                </div>
-                <div class="about__info">
-                    <h1 class="about__title">9 Things You Must Know About Buying Your First Home</h1>
-                    <div class="about__subtitle">
-                        <div class="about__author">Justin Roberts</div>
-                        <div class="about__format">
-                            <span class="about__book-pdf">pdf</span>
-                            <span class="about__book-epub">epub</span>
+    <head>
+        <meta name="description" content="Free eBook: 9 things to know before buying your first home." />
+        <meta name="author" content="Katsiaryna Dauhatseles" />
+        <title>Free eBook</title>
+        <%- include('src/templates/head.html') %>
+    </head>
+    <body>
+        <%- include('src/templates/menu.html') %>
+        <main>
+            <section class="about">
+                <button
+                    type="button"
+                    class="hamburger"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    aria-controls="siteMenu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="container">
+                    <a href="index.html" class="about__logo">
+                        <img src="/src/icons/logo.svg" alt="New American Funding home" />
+                    </a>
+                    <div class="about__wrapper">
+                        <div class="about__book-wrap">
+                            <img src="/src/img/ebook__big.webp" alt="" class="about__book" />
+                        </div>
+                        <div class="about__info">
+                            <h1 class="about__title">9 Things You Must Know About Buying Your First Home</h1>
+                            <div class="about__subtitle">
+                                <div class="about__author">Justin Roberts</div>
+                                <div class="about__format">
+                                    <span class="about__book-pdf">pdf</span>
+                                    <span class="about__book-epub">epub</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__form">
+                            <h2 class="about__headline">About the book</h2>
+                            <p class="about__text">
+                                So you’re about to get into the world of homeownership. It’s okay...everyone feels lost
+                                during this process, but the more preparation you do upfront, the smoother your journey
+                                will be.
+                            </p>
+                            <form class="about__subscribe">
+                                <label for="email" class="visually-hidden">Your Email</label>
+                                <input
+                                    required
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="about__subscribe-input"
+                                    placeholder="Your Email"
+                                />
+                                <button class="about__subscribe-btn">Get the eBook</button>
+                                <p class="about__subscribe-success" role="status"></p>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="about__form">  
-                        <h2 class="about__headline">About the book</h2>
-                        <p class="about__text">So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, 
-                            but the more preparation you do upfront, the smoother your journey will be.</p>
-                    <form class="about__subscribe">
-                        <label for="email" class="visually-hidden">Your Email</label>
-                        <input required
-                        type="email"
-                        id="email"
-						name="email"
-                        class="about__subscribe-input"
-                        placeholder="Your Email">
-                        <button class="about__subscribe-btn">Get the eBook</button>
-                        <p class="about__subscribe-success" role="status"></p>
-                    </form>
-                </div> 
-            </div>
-        </div>
-    </section>
-    <section class="report">
-        <div class="container">
-            <h2 class="report__title">What's in the report</h2>
-            <div class="report__wrapper">
-                <div class="report__item">
-                    <div class="report__item-circle">
-                        <img src="/src/icons/percent.svg" alt="" class="report__img">
-                    </div>
-                    <div class="report__item-descr">
-                        <h3 class="report__subtitle">Rate</h3>
-                        <hr class="report__divider">
-                        <p class="report__text">Yes. Rate is important, but it’s not everything. Understanding your rate 
-                        is more important.</p>
-                    </div>
-                </div>
-                <div class="report__item">
-                    <div class="report__item-circle">
-                        <img src="/src/icons/users.svg" alt="" class="report__img">
-                    </div>
-                    <div class="report__item-descr">
-                        <h3 class="report__subtitle">Relationships</h3>
-                        <hr class="report__divider">
-                        <p class="report__text">Build a solid relationship with a realtor
-                        a lender and never look back!</p>
-                    </div>
-                </div>
-                <div class="report__item">
-                    <div class="report__item-circle">
-                        <img src="/src/icons/tablet.svg" alt="" class="report__img">
-                    </div>
-                    <div class="report__item-descr">
-                        <h3 class="report__subtitle">Pre-Approved</h3>
-                        <hr class="report__divider">
-                        <p class="report__text">Getting pre-approved early will play a key part in finding your dream home.</p>
+            </section>
+            <section class="report">
+                <div class="container">
+                    <h2 class="report__title">What's in the report</h2>
+                    <div class="report__wrapper">
+                        <div class="report__item">
+                            <div class="report__item-circle">
+                                <img src="/src/icons/percent.svg" alt="" class="report__img" />
+                            </div>
+                            <div class="report__item-descr">
+                                <h3 class="report__subtitle">Rate</h3>
+                                <hr class="report__divider" />
+                                <p class="report__text">
+                                    Yes. Rate is important, but it’s not everything. Understanding your rate is more
+                                    important.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="report__item">
+                            <div class="report__item-circle">
+                                <img src="/src/icons/users.svg" alt="" class="report__img" />
+                            </div>
+                            <div class="report__item-descr">
+                                <h3 class="report__subtitle">Relationships</h3>
+                                <hr class="report__divider" />
+                                <p class="report__text">
+                                    Build a solid relationship with a realtor a lender and never look back!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="report__item">
+                            <div class="report__item-circle">
+                                <img src="/src/icons/tablet.svg" alt="" class="report__img" />
+                            </div>
+                            <div class="report__item-descr">
+                                <h3 class="report__subtitle">Pre-Approved</h3>
+                                <hr class="report__divider" />
+                                <p class="report__text">
+                                    Getting pre-approved early will play a key part in finding your dream home.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="author">
-        <div class="container">
-            <h2 class="author__title">About author</h2>
-            <div class="author__wrapper">
-                <div class="author__img"><img src="/src/img/master__ebook.webp" alt="" loading="lazy" class="author__photo"></div>
-                <div class="author__descr">
-                    <span class="author__role">The master mind</span>
-                    <h3 class="author__name">Justin</h3>
-                    <hr class="author__divider">
-                    <p class="author__text">Rates change, but every mortgage journey starts with
-                    a relationship. (Pssst...it’s not just about clicking a button)</p>
-                    <div class="author__btn">
-                        <button type="button" class="author__btn-play" aria-label="Play video: Meet Justin">
-                            <span class="author__btn-icon" aria-hidden="true"></span>
-                        </button>
-                    <div class="author__btn-sign">Meet Justin</div>
+            </section>
+            <section class="author">
+                <div class="container">
+                    <h2 class="author__title">About author</h2>
+                    <div class="author__wrapper">
+                        <div class="author__img">
+                            <img src="/src/img/master__ebook.webp" alt="" loading="lazy" class="author__photo" />
+                        </div>
+                        <div class="author__descr">
+                            <span class="author__role">The master mind</span>
+                            <h3 class="author__name">Justin</h3>
+                            <hr class="author__divider" />
+                            <p class="author__text">
+                                Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s not
+                                just about clicking a button)
+                            </p>
+                            <div class="author__btn">
+                                <button type="button" class="author__btn-play" aria-label="Play video: Meet Justin">
+                                    <span class="author__btn-icon" aria-hidden="true"></span>
+                                </button>
+                                <div class="author__btn-sign">Meet Justin</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <%- include('src/templates/touch.html') %>
-</main>
-<%- include('src/templates/footer.html') %>
-<script type="module" src="/src/js/script.js"></script>
-</body>
+            </section>
+            <%- include('src/templates/touch.html') %>
+        </main>
+        <%- include('src/templates/footer.html') %>
+        <script type="module" src="/src/js/script.js"></script>
+    </body>
 </html>

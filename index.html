@@ -1,502 +1,690 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta name="description" content="Mortgage guidance from New American Funding, from first call to closing." />
-	<meta name="author" content="Katsiaryna Dauhatseles" />
-    <title>New American Funding</title>
-    <%- include('src/templates/head.html') %>
-</head>
-<body>
-    <%- include('src/templates/menu.html') %>
-<main>
-<section class="promo">
-    <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="siteMenu"><span></span><span></span><span></span></button>
-    <img src="/src/img/Mask.webp" alt="" class="promo__video">
-    <div class="container">
-        <div class="promo__wrapper">
-            <div class="promo__media">
-                <div class="promo__video-title">Why a mortgage is so much more than just a rate?</div>
-                <div class="promo__btn-wrap">
-                        <button type="button" class="promo__btn-play" aria-label="Play video: Why a mortgage is so much more than just a rate?">
-                            <span class="promo__btn-icon" aria-hidden="true"></span>
-                        </button>
-                    <time class="promo__btn-time" datetime="PT34S">0:34</time>
-                </div>
-            </div>
-            <div class="promo__intro">
-                <a href="index.html" class="promo__img"><img src="/src/icons/logo.svg" alt="New American Funding home"></a>
-                <h1 class="promo__title">Finding a mortgage is so <span>much more</span> than <span>just a rate</span></h1>
-                <p class="promo__title-descr">Rates change, but every mortgage journey starts with a relationship.
-                (Pssst...it’s not just about clicking a button)</p>
-                <hr class="promo__divider">
-                <div class="promo__controls">
-                    <span class="promo__controls-descr">Let us help you create your mortgage journey</span>
-                    <div class="promo__controls-btns">
-                        <button class="promo__btn-get">Get started</button>
-                        <button class="promo__btn-sched">Schedule a time</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="heroes" id="heroes">
-    <div class="container">
-        <h2 class="heroes__title">Getting a mortgage funded takes a village.</h2>
-        <p class="heroes__title-descr">Well, not quite a village, but two of the villages best lending heroes!</p>
-        <div class="heroes__wrapper">
-            <div class="heroes__card">
-                <div class="heroes__card-top">
-                    <img src="/src/img/master.webp" alt="" loading="lazy" class="heroes__card-img">
-                    <div class="heroes__btn-wrap">
-                        <button type="button" class="heroes__btn-play" aria-label="Play video: Meet Justin">
-                            <span class="heroes__btn-icon" aria-hidden="true"></span>
-                        </button>
-                    <div class="heroes__card-sign">Meet Justin</div>
-                </div>
-                </div>
-                <div class="heroes__card-bottom">
-                    <span class="heroes__card-role">The master mind</span>
-                    <h3 class="heroes__card-name">Justin</h3>
-                    <hr class="heroes__divider-mini">
-                    <div class="heroes__card-descr">Rates change, but every mortgage journey starts with
-                        a relationship. (Pssst...it’s not just about clicking a button)</div>
-                    <h4 class="heroes__card-items">Skills</h4>
-                    <hr class="heroes__divider">
-                    <div class="heroes__skills">
-                        <div class="heroes__skills-wrap">
-                            <div class="heroes__skills-circle">
-                                <img src="/src/icons/case.svg" alt="" class="heroes__skills-icon">
-                            </div>
-                            <span class="heroes__skills-text">Deals</span>
-                        </div>
-                        <div class="heroes__skills-wrap">
-                            <div class="heroes__skills-circle">
-                                <img src="/src/icons/compass.svg" alt="" class="heroes__skills-icon">
-                            </div>
-                            <span class="heroes__skills-text">Find the right way</span>
-                        </div>
-                        <div class="heroes__skills-wrap">
-                            <div class="heroes__skills-circle">
-                                <img src="/src/icons/database.svg" alt="" class="heroes__skills-icon">
-                            </div>
-                            <span class="heroes__skills-text">Mortgage «database»</span>
-                        </div>
-                        <div class="heroes__skills-wrap">
-                            <div class="heroes__skills-circle">
-                                <img src="/src/icons/paper.svg" alt="" class="heroes__skills-icon">
-                            </div>
-                            <span class="heroes__skills-text">Docs master</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="heroes__card">
-                <div class="heroes__card-top">
-                    <img src="/src/img/educator.webp" alt="" loading="lazy" class="heroes__card-img">
-                    <div class="heroes__btn-wrap">
-                        <button type="button" class="heroes__btn-play" aria-label="Play video: Meet Scott">
-                            <span class="heroes__btn-icon" aria-hidden="true"></span>
-                        </button>
-                    <div class="heroes__card-sign">Meet Scott</div>
-                </div>
-                </div>
-                <div class="heroes__card-bottom">
-                    <span class="heroes__card-role">The educator</span>
-                    <h3 class="heroes__card-name">Scott</h3>
-                    <hr class="heroes__divider-mini">
-                    <div class="heroes__card-descr">Rates change, but every mortgage journey starts with
-                        a relationship. (Pssst...it’s not just about clicking a button)</div>
-                    <h4 class="heroes__card-items">Skills</h4>
-                    <hr class="heroes__divider">
-                    <div class="heroes__skills">
-                        <div class="heroes__skills-wrap">
-                            <div class="heroes__skills-circle">
-                                <img src="/src/icons/globe.svg" alt="" class="heroes__skills-icon">
-                            </div>
-                            <span class="heroes__skills-text">Linguist</span>
-                        </div>
-                        <div class="heroes__skills-wrap">
-                            <div class="heroes__skills-circle">
-                                <img src="/src/icons/home.svg" alt="" class="heroes__skills-icon">
-                            </div>
-                            <span class="heroes__skills-text">Perfect place searcher</span>
-                        </div>
-                        <div class="heroes__skills-wrap">
-                            <div class="heroes__skills-circle">
-                                <img src="/src/icons/life-buoy.svg" alt="" class="heroes__skills-icon">
-                            </div>
-                            <span class="heroes__skills-text">Helper</span>
-                        </div>
-                        <div class="heroes__skills-wrap">
-                            <div class="heroes__skills-circle">
-                                <img src="/src/icons/users.svg" alt="" class="heroes__skills-icon">
-                            </div>
-                            <span class="heroes__skills-text">Communication Guru</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="journey" id="journey">
-    <div class="journey__dots-wrap" role="group" aria-label="Choose journey step">
-        <button type="button" class="journey__dot" data-step="1" aria-label="Step 1: Get positioned"><span aria-hidden="true"></span></button>
-        <button type="button" class="journey__dot active" data-step="2" aria-label="Step 2: Prep the offer" aria-current="step"><span aria-hidden="true"></span></button>
-        <button type="button" class="journey__dot" data-step="3" aria-label="Step 3: Finalize Closing"><span aria-hidden="true"></span></button>
-    </div>
-    <div class="container">
-        <h2 class="journey__title">Your mortgage journey is a story...</h2>
-        <p class="journey__title-descr">It’s not just about clicking a button.</p>
-        <div class="journey__wrapper">
-            <div class="journey__panels">
-                    <div class="journey__panels-wrap">
-                        <div class="journey__panel" data-step="1" role="button" tabindex="0">
-                            <span aria-hidden="true">01</span>
-                            <h3>Get positioned</h3>
-                            <hr class="journey__panel-div">
-                            <p>Structure, pre-approval, gathering, put them
-                            into the position get the offer accepted.</p>
-                        </div>
-                        <div class="journey__panel active" data-step="2" role="button" tabindex="0" aria-current="step">
-                            <span aria-hidden="true">02</span>
-                            <h3>Prep the offer</h3>
-                            <hr class="journey__panel-div">
-                            <p>Terms of your offer, how quickly you can turn
-                            things around and who your lender is advising.</p>
-                        </div>
-                        <div class="journey__panel" data-step="3" role="button" tabindex="0">
-                            <span aria-hidden="true">03</span>
-                            <h3>Finalize Closing</h3>
-                            <hr class="journey__panel-div">
-                            <p>Put the final touches on from contract to close.
-                            Close the deal.</p>
-                        </div>
-                    </div>
-            </div>
-            <div class="journey__video">
-                <div class="journey__video-top">
-                    <div class="journey__video-back">
-                        <div class="journey__video-media">
-                            <button type="button" class="journey__btn-video" aria-label="Play video: The difference between «fixed rate» and «adjustable»">
-                                <span class="journey__btn-icon" aria-hidden="true"></span>
-                            </button>
-                            <h3 class="journey__video-title">The difference between «fixed rate» and «adjustable»</h3>
-                            <time class="journey__video-time" datetime="PT29S">0:29</time>
-                        </div>
-                    </div>
-                </div>
-                    <div class="journey__video-bottom">
-                        <div class="journey__video-under">
-                            <div class="journey__video-media">
-                                <button type="button" class="journey__btn-video" aria-label="Play video: What are points and credits?">
-                                    <span class="journey__btn-icon" aria-hidden="true"></span>
+    <head>
+        <meta name="description" content="Mortgage guidance from New American Funding, from first call to closing." />
+        <meta name="author" content="Katsiaryna Dauhatseles" />
+        <title>New American Funding</title>
+        <%- include('src/templates/head.html') %>
+    </head>
+    <body>
+        <%- include('src/templates/menu.html') %>
+        <main>
+            <section class="promo">
+                <button
+                    type="button"
+                    class="hamburger"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    aria-controls="siteMenu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <img src="/src/img/Mask.webp" alt="" class="promo__video" />
+                <div class="container">
+                    <div class="promo__wrapper">
+                        <div class="promo__media">
+                            <div class="promo__video-title">Why a mortgage is so much more than just a rate?</div>
+                            <div class="promo__btn-wrap">
+                                <button
+                                    type="button"
+                                    class="promo__btn-play"
+                                    aria-label="Play video: Why a mortgage is so much more than just a rate?"
+                                >
+                                    <span class="promo__btn-icon" aria-hidden="true"></span>
                                 </button>
-                                <h3 class="journey__video-title">What are points and credits?</h3>
-                                <time class="journey__video-time" datetime="PT27S">0:27</time>
+                                <time class="promo__btn-time" datetime="PT34S">0:34</time>
+                            </div>
+                        </div>
+                        <div class="promo__intro">
+                            <a href="index.html" class="promo__img">
+                                <img src="/src/icons/logo.svg" alt="New American Funding home" />
+                            </a>
+                            <h1 class="promo__title">
+                                Finding a mortgage is so
+                                <span>much more</span>
+                                than
+                                <span>just a rate</span>
+                            </h1>
+                            <p class="promo__title-descr">
+                                Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s not
+                                just about clicking a button)
+                            </p>
+                            <hr class="promo__divider" />
+                            <div class="promo__controls">
+                                <span class="promo__controls-descr">Let us help you create your mortgage journey</span>
+                                <div class="promo__controls-btns">
+                                    <button class="promo__btn-get">Get started</button>
+                                    <button class="promo__btn-sched">Schedule a time</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="journey__video-bottom">
-                        <div class="journey__video-under">
-                            <div class="journey__video-media">
-                                <button type="button" class="journey__btn-video" aria-label="Play video: Why a mortgage is so much more than just a rate?">
-                                    <span class="journey__btn-icon" aria-hidden="true"></span>
-                                </button>
-                                <h3 class="journey__video-title">Why a mortgage is so much more than just a rate?</h3>
-                                <time class="journey__video-time" datetime="PT34S">0:34</time>
+                </div>
+            </section>
+            <section class="heroes" id="heroes">
+                <div class="container">
+                    <h2 class="heroes__title">Getting a mortgage funded takes a village.</h2>
+                    <p class="heroes__title-descr">
+                        Well, not quite a village, but two of the villages best lending heroes!
+                    </p>
+                    <div class="heroes__wrapper">
+                        <div class="heroes__card">
+                            <div class="heroes__card-top">
+                                <img src="/src/img/master.webp" alt="" loading="lazy" class="heroes__card-img" />
+                                <div class="heroes__btn-wrap">
+                                    <button type="button" class="heroes__btn-play" aria-label="Play video: Meet Justin">
+                                        <span class="heroes__btn-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <div class="heroes__card-sign">Meet Justin</div>
+                                </div>
+                            </div>
+                            <div class="heroes__card-bottom">
+                                <span class="heroes__card-role">The master mind</span>
+                                <h3 class="heroes__card-name">Justin</h3>
+                                <hr class="heroes__divider-mini" />
+                                <div class="heroes__card-descr">
+                                    Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s
+                                    not just about clicking a button)
+                                </div>
+                                <h4 class="heroes__card-items">Skills</h4>
+                                <hr class="heroes__divider" />
+                                <div class="heroes__skills">
+                                    <div class="heroes__skills-wrap">
+                                        <div class="heroes__skills-circle">
+                                            <img src="/src/icons/case.svg" alt="" class="heroes__skills-icon" />
+                                        </div>
+                                        <span class="heroes__skills-text">Deals</span>
+                                    </div>
+                                    <div class="heroes__skills-wrap">
+                                        <div class="heroes__skills-circle">
+                                            <img src="/src/icons/compass.svg" alt="" class="heroes__skills-icon" />
+                                        </div>
+                                        <span class="heroes__skills-text">Find the right way</span>
+                                    </div>
+                                    <div class="heroes__skills-wrap">
+                                        <div class="heroes__skills-circle">
+                                            <img src="/src/icons/database.svg" alt="" class="heroes__skills-icon" />
+                                        </div>
+                                        <span class="heroes__skills-text">Mortgage «database»</span>
+                                    </div>
+                                    <div class="heroes__skills-wrap">
+                                        <div class="heroes__skills-circle">
+                                            <img src="/src/icons/paper.svg" alt="" class="heroes__skills-icon" />
+                                        </div>
+                                        <span class="heroes__skills-text">Docs master</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="heroes__card">
+                            <div class="heroes__card-top">
+                                <img src="/src/img/educator.webp" alt="" loading="lazy" class="heroes__card-img" />
+                                <div class="heroes__btn-wrap">
+                                    <button type="button" class="heroes__btn-play" aria-label="Play video: Meet Scott">
+                                        <span class="heroes__btn-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <div class="heroes__card-sign">Meet Scott</div>
+                                </div>
+                            </div>
+                            <div class="heroes__card-bottom">
+                                <span class="heroes__card-role">The educator</span>
+                                <h3 class="heroes__card-name">Scott</h3>
+                                <hr class="heroes__divider-mini" />
+                                <div class="heroes__card-descr">
+                                    Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s
+                                    not just about clicking a button)
+                                </div>
+                                <h4 class="heroes__card-items">Skills</h4>
+                                <hr class="heroes__divider" />
+                                <div class="heroes__skills">
+                                    <div class="heroes__skills-wrap">
+                                        <div class="heroes__skills-circle">
+                                            <img src="/src/icons/globe.svg" alt="" class="heroes__skills-icon" />
+                                        </div>
+                                        <span class="heroes__skills-text">Linguist</span>
+                                    </div>
+                                    <div class="heroes__skills-wrap">
+                                        <div class="heroes__skills-circle">
+                                            <img src="/src/icons/home.svg" alt="" class="heroes__skills-icon" />
+                                        </div>
+                                        <span class="heroes__skills-text">Perfect place searcher</span>
+                                    </div>
+                                    <div class="heroes__skills-wrap">
+                                        <div class="heroes__skills-circle">
+                                            <img src="/src/icons/life-buoy.svg" alt="" class="heroes__skills-icon" />
+                                        </div>
+                                        <span class="heroes__skills-text">Helper</span>
+                                    </div>
+                                    <div class="heroes__skills-wrap">
+                                        <div class="heroes__skills-circle">
+                                            <img src="/src/icons/users.svg" alt="" class="heroes__skills-icon" />
+                                        </div>
+                                        <span class="heroes__skills-text">Communication Guru</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-            </div>
-        </div>
-    </div>
-<dialog class="journey__modal" id="journeyModal">
-    <div class="journey__modal-content">
-        <button type="button" class="journey__modal-close" aria-label="Close">
-            <svg width="10" height="10" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144
+                </div>
+            </section>
+            <section class="journey" id="journey">
+                <div class="journey__dots-wrap" role="group" aria-label="Choose journey step">
+                    <button type="button" class="journey__dot" data-step="1" aria-label="Step 1: Get positioned">
+                        <span aria-hidden="true"></span>
+                    </button>
+                    <button
+                        type="button"
+                        class="journey__dot active"
+                        data-step="2"
+                        aria-label="Step 2: Prep the offer"
+                        aria-current="step"
+                    >
+                        <span aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="journey__dot" data-step="3" aria-label="Step 3: Finalize Closing">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="container">
+                    <h2 class="journey__title">Your mortgage journey is a story...</h2>
+                    <p class="journey__title-descr">It’s not just about clicking a button.</p>
+                    <div class="journey__wrapper">
+                        <div class="journey__panels">
+                            <div class="journey__panels-wrap">
+                                <div class="journey__panel" data-step="1" role="button" tabindex="0">
+                                    <span aria-hidden="true">01</span>
+                                    <h3>Get positioned</h3>
+                                    <hr class="journey__panel-div" />
+                                    <p>
+                                        Structure, pre-approval, gathering, put them into the position get the offer
+                                        accepted.
+                                    </p>
+                                </div>
+                                <div
+                                    class="journey__panel active"
+                                    data-step="2"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-current="step"
+                                >
+                                    <span aria-hidden="true">02</span>
+                                    <h3>Prep the offer</h3>
+                                    <hr class="journey__panel-div" />
+                                    <p>
+                                        Terms of your offer, how quickly you can turn things around and who your lender
+                                        is advising.
+                                    </p>
+                                </div>
+                                <div class="journey__panel" data-step="3" role="button" tabindex="0">
+                                    <span aria-hidden="true">03</span>
+                                    <h3>Finalize Closing</h3>
+                                    <hr class="journey__panel-div" />
+                                    <p>Put the final touches on from contract to close. Close the deal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="journey__video">
+                            <div class="journey__video-top">
+                                <div class="journey__video-back">
+                                    <div class="journey__video-media">
+                                        <button
+                                            type="button"
+                                            class="journey__btn-video"
+                                            aria-label="Play video: The difference between «fixed rate» and «adjustable»"
+                                        >
+                                            <span class="journey__btn-icon" aria-hidden="true"></span>
+                                        </button>
+                                        <h3 class="journey__video-title">
+                                            The difference between «fixed rate» and «adjustable»
+                                        </h3>
+                                        <time class="journey__video-time" datetime="PT29S">0:29</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="journey__video-bottom">
+                                <div class="journey__video-under">
+                                    <div class="journey__video-media">
+                                        <button
+                                            type="button"
+                                            class="journey__btn-video"
+                                            aria-label="Play video: What are points and credits?"
+                                        >
+                                            <span class="journey__btn-icon" aria-hidden="true"></span>
+                                        </button>
+                                        <h3 class="journey__video-title">What are points and credits?</h3>
+                                        <time class="journey__video-time" datetime="PT27S">0:27</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="journey__video-bottom">
+                                <div class="journey__video-under">
+                                    <div class="journey__video-media">
+                                        <button
+                                            type="button"
+                                            class="journey__btn-video"
+                                            aria-label="Play video: Why a mortgage is so much more than just a rate?"
+                                        >
+                                            <span class="journey__btn-icon" aria-hidden="true"></span>
+                                        </button>
+                                        <h3 class="journey__video-title">
+                                            Why a mortgage is so much more than just a rate?
+                                        </h3>
+                                        <time class="journey__video-time" datetime="PT34S">0:34</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <dialog class="journey__modal" id="journeyModal">
+                    <div class="journey__modal-content">
+                        <button type="button" class="journey__modal-close" aria-label="Close">
+                            <svg
+                                width="10"
+                                height="10"
+                                viewBox="0 0 29 30"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144
             -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437
             0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716
             26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141
             28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226
-            28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
-            </svg>
-        </button>
-        <div class="journey__modal-top">
-            <img src="/src/icons/left-quote.svg" alt="" class="journey__modal-icon">
-            <blockquote class="journey__modal-text">A mortgage isn't just about a rate.
-                It's about building a strategy to help you leverage your wealth.
-            </blockquote>
-            <div class="journey__modal-avatar">
-                <img src="/src/icons/hero.svg" alt="">
-                <span class="journey__modal-name">Justin</span>
-            </div>
-        </div>
-        <hr class="journey__modal-div">
-        <div class="journey__modal-footer">
-            <span class="journey__modal-question">Have a question?</span>
-            <button class="journey__modal-btn">Let’s talk</button>
-        </div>
-    </div>
-</dialog>
-</section>
-<section class="reviews" id="reviews">
-    <div class="container">
-        <h2 class="reviews__title">What our customers say</h2>
-        <p class="reviews__title-descr">Real reviews from our clients</p>
-        <div class="reviews__websites">
-            <div class="reviews__websites-wrap">
-                <div class="reviews__websites-left">
-                    <div class="reviews__websites-value" data-rating="4.5" aria-label="4.5 stars rating">4.5 stars rating</div>
-                    <div class="reviews__websites-google"></div>
-                    <hr class="reviews__divider">
-                    <div class="reviews__websites-count">Based on <a href="#" class="reviews__websites-rating">85 reviews</a></div>
-                </div>
-                <div class="reviews__websites-right">
-                    <span class="reviews__websites-star full"></span>
-                    <span class="reviews__websites-star full"></span>
-                    <span class="reviews__websites-star full"></span>
-                    <span class="reviews__websites-star full"></span>
-                    <span class="reviews__websites-star half"></span>
-                </div>
-            </div>
-            <div class="reviews__websites-wrap">
-                <div class="reviews__websites-left">
-                    <span class="reviews__websites-score" data-rating="4" aria-label="4 stars rating">4 stars rating</span>   
-                    <div class="reviews__websites-zillow"></div>
-                    <hr class="reviews__divider">
-                    <div class="reviews__websites-count">Based on <a href="#" class="reviews__websites-rating">22 reviews</a></div>
-                </div>
-                <div class="reviews__websites-right">
-                    <span class="reviews__websites-star full"></span>
-                    <span class="reviews__websites-star full"></span>
-                    <span class="reviews__websites-star full"></span>
-                    <span class="reviews__websites-star full"></span>
-                    <span class="reviews__websites-star empty"></span>
-                </div>
-            </div>
-        </div>
-        <div class="reviews__media-wrap">
-                <div class="reviews__number">
-                    <span class="reviews__number-current">01</span>
-                    <span class="reviews__number-total">/06</span>
-                </div>
-                <div class="reviews__media-btns">
-                    <button type="button" class="reviews__btn-left" aria-label="Previous review"></button>
-                    <button type="button" class="reviews__btn-right" aria-label="Next review"></button>
-                </div>
-                <div class="reviews__page">
-                    <div class="reviews__page-item active">
-                        <div class="reviews__page-top">
-                            <img src="/src/img/avatar_2.webp" alt="" loading="lazy" class="reviews__page-photo">
-                            <div class="reviews__page-intro">
-                                <span>New York</span>
-                                <div class="reviews__page-name">Emily Pearson<img src="/src/icons/google.svg" alt="Google review"></div>
-                                <div class="reviews__page-job">Engineer</div>
+            28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"
+                                    fill="black"
+                                />
+                            </svg>
+                        </button>
+                        <div class="journey__modal-top">
+                            <img src="/src/icons/left-quote.svg" alt="" class="journey__modal-icon" />
+                            <blockquote class="journey__modal-text">
+                                A mortgage isn't just about a rate. It's about building a strategy to help you leverage
+                                your wealth.
+                            </blockquote>
+                            <div class="journey__modal-avatar">
+                                <img src="/src/icons/hero.svg" alt="" />
+                                <span class="journey__modal-name">Justin</span>
                             </div>
                         </div>
-                        <hr class="reviews__page-div">
-                        <div class="reviews__page-under">
-                            <img src="/src/icons/right-quote.svg" alt="" class="reviews__page-img">
-                            <p class="reviews__page-text">Terms of your offer, how quickly you can turn things around and who your lender is 
-                                advising, calling listing agents, 
-                                to get your deal done, Offer-Stage advising, calling listing agents, to get your deal done.</p>
+                        <hr class="journey__modal-div" />
+                        <div class="journey__modal-footer">
+                            <span class="journey__modal-question">Have a question?</span>
+                            <button class="journey__modal-btn">Let’s talk</button>
                         </div>
                     </div>
-                    <div class="reviews__page-item next">
-                        <div class="reviews__page-top">
-                            <img src="/src/img/avatar_1.webp" alt="" loading="lazy" class="reviews__page-photo">
-                            <div class="reviews__page-intro">
-                                <span>Los Angeles</span>
-                                <div class="reviews__page-name">Michael Bronson<img src="/src/icons/zillow.png" alt="Zillow review"></div>
-                                <div class="reviews__page-job">Product designer</div>
+                </dialog>
+            </section>
+            <section class="reviews" id="reviews">
+                <div class="container">
+                    <h2 class="reviews__title">What our customers say</h2>
+                    <p class="reviews__title-descr">Real reviews from our clients</p>
+                    <div class="reviews__websites">
+                        <div class="reviews__websites-wrap">
+                            <div class="reviews__websites-left">
+                                <div class="reviews__websites-value" data-rating="4.5" aria-label="4.5 stars rating">
+                                    4.5 stars rating
+                                </div>
+                                <div class="reviews__websites-google"></div>
+                                <hr class="reviews__divider" />
+                                <div class="reviews__websites-count">
+                                    Based on
+                                    <a href="#" class="reviews__websites-rating">85 reviews</a>
+                                </div>
+                            </div>
+                            <div class="reviews__websites-right">
+                                <span class="reviews__websites-star full"></span>
+                                <span class="reviews__websites-star full"></span>
+                                <span class="reviews__websites-star full"></span>
+                                <span class="reviews__websites-star full"></span>
+                                <span class="reviews__websites-star half"></span>
                             </div>
                         </div>
-                        <hr class="reviews__page-div">
-                        <div class="reviews__page-under">
-                            <img src="/src/icons/right-quote.svg" alt="" class="reviews__page-img">
-                            <p class="reviews__page-text">Terms of your offer, how quickly you can turn things around and who your lender is advising, 
-                                calling listing agents, to get your deal done, 
-                                Offer-Stage advising, calling listing agents, to get your deal done.</p>
+                        <div class="reviews__websites-wrap">
+                            <div class="reviews__websites-left">
+                                <span class="reviews__websites-score" data-rating="4" aria-label="4 stars rating">
+                                    4 stars rating
+                                </span>
+                                <div class="reviews__websites-zillow"></div>
+                                <hr class="reviews__divider" />
+                                <div class="reviews__websites-count">
+                                    Based on
+                                    <a href="#" class="reviews__websites-rating">22 reviews</a>
+                                </div>
+                            </div>
+                            <div class="reviews__websites-right">
+                                <span class="reviews__websites-star full"></span>
+                                <span class="reviews__websites-star full"></span>
+                                <span class="reviews__websites-star full"></span>
+                                <span class="reviews__websites-star full"></span>
+                                <span class="reviews__websites-star empty"></span>
+                            </div>
                         </div>
                     </div>
-                    <div class="reviews__page-item">
-                        <div class="reviews__page-top">
-                            <img src="/src/img/avatar_2.webp" alt="" loading="lazy" class="reviews__page-photo">
-                            <div class="reviews__page-intro">
-                                <span>Chicago</span>
-                                <div class="reviews__page-name">Sarah Mitchell<img src="/src/icons/google.svg" alt="Google review"></div>
-                                <div class="reviews__page-job">Teacher</div>
+                    <div class="reviews__media-wrap">
+                        <div class="reviews__number">
+                            <span class="reviews__number-current">01</span>
+                            <span class="reviews__number-total">/06</span>
+                        </div>
+                        <div class="reviews__media-btns">
+                            <button type="button" class="reviews__btn-left" aria-label="Previous review"></button>
+                            <button type="button" class="reviews__btn-right" aria-label="Next review"></button>
+                        </div>
+                        <div class="reviews__page">
+                            <div class="reviews__page-item active">
+                                <div class="reviews__page-top">
+                                    <img
+                                        src="/src/img/avatar_2.webp"
+                                        alt=""
+                                        loading="lazy"
+                                        class="reviews__page-photo"
+                                    />
+                                    <div class="reviews__page-intro">
+                                        <span>New York</span>
+                                        <div class="reviews__page-name">
+                                            Emily Pearson
+                                            <img src="/src/icons/google.svg" alt="Google review" />
+                                        </div>
+                                        <div class="reviews__page-job">Engineer</div>
+                                    </div>
+                                </div>
+                                <hr class="reviews__page-div" />
+                                <div class="reviews__page-under">
+                                    <img src="/src/icons/right-quote.svg" alt="" class="reviews__page-img" />
+                                    <p class="reviews__page-text">
+                                        Terms of your offer, how quickly you can turn things around and who your lender
+                                        is advising, calling listing agents, to get your deal done, Offer-Stage
+                                        advising, calling listing agents, to get your deal done.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews__page-item next">
+                                <div class="reviews__page-top">
+                                    <img
+                                        src="/src/img/avatar_1.webp"
+                                        alt=""
+                                        loading="lazy"
+                                        class="reviews__page-photo"
+                                    />
+                                    <div class="reviews__page-intro">
+                                        <span>Los Angeles</span>
+                                        <div class="reviews__page-name">
+                                            Michael Bronson
+                                            <img src="/src/icons/zillow.png" alt="Zillow review" />
+                                        </div>
+                                        <div class="reviews__page-job">Product designer</div>
+                                    </div>
+                                </div>
+                                <hr class="reviews__page-div" />
+                                <div class="reviews__page-under">
+                                    <img src="/src/icons/right-quote.svg" alt="" class="reviews__page-img" />
+                                    <p class="reviews__page-text">
+                                        Terms of your offer, how quickly you can turn things around and who your lender
+                                        is advising, calling listing agents, to get your deal done, Offer-Stage
+                                        advising, calling listing agents, to get your deal done.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews__page-item">
+                                <div class="reviews__page-top">
+                                    <img
+                                        src="/src/img/avatar_2.webp"
+                                        alt=""
+                                        loading="lazy"
+                                        class="reviews__page-photo"
+                                    />
+                                    <div class="reviews__page-intro">
+                                        <span>Chicago</span>
+                                        <div class="reviews__page-name">
+                                            Sarah Mitchell
+                                            <img src="/src/icons/google.svg" alt="Google review" />
+                                        </div>
+                                        <div class="reviews__page-job">Teacher</div>
+                                    </div>
+                                </div>
+                                <hr class="reviews__page-div" />
+                                <div class="reviews__page-under">
+                                    <img src="/src/icons/right-quote.svg" alt="" class="reviews__page-img" />
+                                    <p class="reviews__page-text">
+                                        Terms of your offer, how quickly you can turn things around and who your lender
+                                        is advising, calling listing agents, to get your deal done, Offer-Stage
+                                        advising, calling listing agents, to get your deal done.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews__page-item">
+                                <div class="reviews__page-top">
+                                    <img
+                                        src="/src/img/avatar_1.webp"
+                                        alt=""
+                                        loading="lazy"
+                                        class="reviews__page-photo"
+                                    />
+                                    <div class="reviews__page-intro">
+                                        <span>Seattle</span>
+                                        <div class="reviews__page-name">
+                                            David Carter
+                                            <img src="/src/icons/zillow.png" alt="Zillow review" />
+                                        </div>
+                                        <div class="reviews__page-job">Marketing manager</div>
+                                    </div>
+                                </div>
+                                <hr class="reviews__page-div" />
+                                <div class="reviews__page-under">
+                                    <img src="/src/icons/right-quote.svg" alt="" class="reviews__page-img" />
+                                    <p class="reviews__page-text">
+                                        Terms of your offer, how quickly you can turn things around and who your lender
+                                        is advising, calling listing agents, to get your deal done, Offer-Stage
+                                        advising, calling listing agents, to get your deal done.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews__page-item">
+                                <div class="reviews__page-top">
+                                    <img
+                                        src="/src/img/avatar_2.webp"
+                                        alt=""
+                                        loading="lazy"
+                                        class="reviews__page-photo"
+                                    />
+                                    <div class="reviews__page-intro">
+                                        <span>Austin</span>
+                                        <div class="reviews__page-name">
+                                            Olivia Brooks
+                                            <img src="/src/icons/google.svg" alt="Google review" />
+                                        </div>
+                                        <div class="reviews__page-job">Nurse</div>
+                                    </div>
+                                </div>
+                                <hr class="reviews__page-div" />
+                                <div class="reviews__page-under">
+                                    <img src="/src/icons/right-quote.svg" alt="" class="reviews__page-img" />
+                                    <p class="reviews__page-text">
+                                        Terms of your offer, how quickly you can turn things around and who your lender
+                                        is advising, calling listing agents, to get your deal done, Offer-Stage
+                                        advising, calling listing agents, to get your deal done.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews__page-item">
+                                <div class="reviews__page-top">
+                                    <img
+                                        src="/src/img/avatar_1.webp"
+                                        alt=""
+                                        loading="lazy"
+                                        class="reviews__page-photo"
+                                    />
+                                    <div class="reviews__page-intro">
+                                        <span>Denver</span>
+                                        <div class="reviews__page-name">
+                                            James Walker
+                                            <img src="/src/icons/zillow.png" alt="Zillow review" />
+                                        </div>
+                                        <div class="reviews__page-job">Software developer</div>
+                                    </div>
+                                </div>
+                                <hr class="reviews__page-div" />
+                                <div class="reviews__page-under">
+                                    <img src="/src/icons/right-quote.svg" alt="" class="reviews__page-img" />
+                                    <p class="reviews__page-text">
+                                        Terms of your offer, how quickly you can turn things around and who your lender
+                                        is advising, calling listing agents, to get your deal done, Offer-Stage
+                                        advising, calling listing agents, to get your deal done.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <hr class="reviews__page-div">
-                        <div class="reviews__page-under">
-                            <img src="/src/icons/right-quote.svg" alt="" class="reviews__page-img">
-                            <p class="reviews__page-text">Terms of your offer, how quickly you can turn things around and who your lender is advising, 
-                                calling listing agents, to get your deal done, 
-                                Offer-Stage advising, calling listing agents, to get your deal done.</p>
-                        </div>
-                    </div>
-                    <div class="reviews__page-item">
-                        <div class="reviews__page-top">
-                            <img src="/src/img/avatar_1.webp" alt="" loading="lazy" class="reviews__page-photo">
-                            <div class="reviews__page-intro">
-                                <span>Seattle</span>
-                                <div class="reviews__page-name">David Carter<img src="/src/icons/zillow.png" alt="Zillow review"></div>
-                                <div class="reviews__page-job">Marketing manager</div>
-                            </div>
-                        </div>
-                        <hr class="reviews__page-div">
-                        <div class="reviews__page-under">
-                            <img src="/src/icons/right-quote.svg" alt="" class="reviews__page-img">
-                            <p class="reviews__page-text">Terms of your offer, how quickly you can turn things around and who your lender is advising, 
-                                calling listing agents, to get your deal done, 
-                                Offer-Stage advising, calling listing agents, to get your deal done.</p>
-                        </div>
-                    </div>
-                    <div class="reviews__page-item">
-                        <div class="reviews__page-top">
-                            <img src="/src/img/avatar_2.webp" alt="" loading="lazy" class="reviews__page-photo">
-                            <div class="reviews__page-intro">
-                                <span>Austin</span>
-                                <div class="reviews__page-name">Olivia Brooks<img src="/src/icons/google.svg" alt="Google review"></div>
-                                <div class="reviews__page-job">Nurse</div>
-                            </div>
-                        </div>
-                        <hr class="reviews__page-div">
-                        <div class="reviews__page-under">
-                            <img src="/src/icons/right-quote.svg" alt="" class="reviews__page-img">
-                            <p class="reviews__page-text">Terms of your offer, how quickly you can turn things around and who your lender is advising, 
-                                calling listing agents, to get your deal done, 
-                                Offer-Stage advising, calling listing agents, to get your deal done.</p>
-                        </div>
-                    </div>
-                    <div class="reviews__page-item">
-                        <div class="reviews__page-top">
-                            <img src="/src/img/avatar_1.webp" alt="" loading="lazy" class="reviews__page-photo">
-                            <div class="reviews__page-intro">
-                                <span>Denver</span>
-                                <div class="reviews__page-name">James Walker<img src="/src/icons/zillow.png" alt="Zillow review"></div>
-                                <div class="reviews__page-job">Software developer</div>
-                            </div>
-                        </div>
-                        <hr class="reviews__page-div">
-                        <div class="reviews__page-under">
-                            <img src="/src/icons/right-quote.svg" alt="" class="reviews__page-img">
-                            <p class="reviews__page-text">Terms of your offer, how quickly you can turn things around and who your lender is advising, 
-                                calling listing agents, to get your deal done, 
-                                Offer-Stage advising, calling listing agents, to get your deal done.</p>
+                        <div class="reviews__dots-wrap" role="group" aria-label="Choose review">
+                            <button
+                                type="button"
+                                class="reviews__dot active"
+                                data-step="1"
+                                aria-label="Go to review 1"
+                                aria-current="true"
+                            >
+                                <span aria-hidden="true"></span>
+                            </button>
+                            <button type="button" class="reviews__dot" data-step="2" aria-label="Go to review 2">
+                                <span aria-hidden="true"></span>
+                            </button>
+                            <button type="button" class="reviews__dot" data-step="3" aria-label="Go to review 3">
+                                <span aria-hidden="true"></span>
+                            </button>
+                            <button type="button" class="reviews__dot" data-step="4" aria-label="Go to review 4">
+                                <span aria-hidden="true"></span>
+                            </button>
+                            <button type="button" class="reviews__dot" data-step="5" aria-label="Go to review 5">
+                                <span aria-hidden="true"></span>
+                            </button>
+                            <button type="button" class="reviews__dot" data-step="6" aria-label="Go to review 6">
+                                <span aria-hidden="true"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="reviews__dots-wrap" role="group" aria-label="Choose review">
-                    <button type="button" class="reviews__dot active" data-step="1" aria-label="Go to review 1" aria-current="true"><span aria-hidden="true"></span></button>
-                    <button type="button" class="reviews__dot" data-step="2" aria-label="Go to review 2"><span aria-hidden="true"></span></button>
-                    <button type="button" class="reviews__dot" data-step="3" aria-label="Go to review 3"><span aria-hidden="true"></span></button>
-                    <button type="button" class="reviews__dot" data-step="4" aria-label="Go to review 4"><span aria-hidden="true"></span></button>
-                    <button type="button" class="reviews__dot" data-step="5" aria-label="Go to review 5"><span aria-hidden="true"></span></button>
-                    <button type="button" class="reviews__dot" data-step="6" aria-label="Go to review 6"><span aria-hidden="true"></span></button>
-                </div>
-            </div>
-    </div>
-</section>
-<section class="education">
-    <div class="container">
-        <div class="education__wrap">
-        <div class="education__card">
-            <div class="education__titles">
-                <h2 class="education__title">Education</h2>
-                <a href="blog.html" class="education__title-list">All articles</a>
-            </div>
-            <div class="education__blogs">
-                <a href="article.html" class="education__blog-big">
-                    <article>
-                        <span class="education__tag">Blog</span>
-                        <h3 class="education__headline">Article #1</h3>
-                        <p class="education__text-big">Terms of your offer, how quickly you can turn things around and who your lender is advising.
-                        </p>
-                        <hr class="education__divider">
-                        <footer class="education__footer">
-                            <div class="education__footer-img"></div>
-                            <div class="education__footer-names">
-                                <div class="education__footer-sign">by</div>
-                                <div class="education__footer-name">Scott Johnson</div>
+            </section>
+            <section class="education">
+                <div class="container">
+                    <div class="education__wrap">
+                        <div class="education__card">
+                            <div class="education__titles">
+                                <h2 class="education__title">Education</h2>
+                                <a href="blog.html" class="education__title-list">All articles</a>
                             </div>
-                        </footer>
-                    </article>
-                </a>
-                <a href="article.html" class="education__blog-small">
-                    <article>
-                        <span class="education__tag-small">Blog</span>
-                    <h3 class="education__headline-small">Article #2</h3>
-                    <p class="education__text">Terms of your offer, how quickly you can turn things around and who your lender is advising.
-                    </p>
-                    <hr class="education__divider-small">
-                    <footer class="education__footer">
-                        <div class="education__footer-photo"></div>
-                        <div class="education__footer-names">
-                            <div class="education__footer-mark">by</div>
-                            <div class="education__footer-author">Justin Roberts</div>
+                            <div class="education__blogs">
+                                <a href="article.html" class="education__blog-big">
+                                    <article>
+                                        <span class="education__tag">Blog</span>
+                                        <h3 class="education__headline">Article #1</h3>
+                                        <p class="education__text-big">
+                                            Terms of your offer, how quickly you can turn things around and who your
+                                            lender is advising.
+                                        </p>
+                                        <hr class="education__divider" />
+                                        <footer class="education__footer">
+                                            <div class="education__footer-img"></div>
+                                            <div class="education__footer-names">
+                                                <div class="education__footer-sign">by</div>
+                                                <div class="education__footer-name">Scott Johnson</div>
+                                            </div>
+                                        </footer>
+                                    </article>
+                                </a>
+                                <a href="article.html" class="education__blog-small">
+                                    <article>
+                                        <span class="education__tag-small">Blog</span>
+                                        <h3 class="education__headline-small">Article #2</h3>
+                                        <p class="education__text">
+                                            Terms of your offer, how quickly you can turn things around and who your
+                                            lender is advising.
+                                        </p>
+                                        <hr class="education__divider-small" />
+                                        <footer class="education__footer">
+                                            <div class="education__footer-photo"></div>
+                                            <div class="education__footer-names">
+                                                <div class="education__footer-mark">by</div>
+                                                <div class="education__footer-author">Justin Roberts</div>
+                                            </div>
+                                        </footer>
+                                    </article>
+                                </a>
+                                <a href="article.html" class="education__blog-small">
+                                    <article>
+                                        <span class="education__tag-small">Blog</span>
+                                        <h3 class="education__headline-small">Article #3</h3>
+                                        <p class="education__text">
+                                            Terms of your offer, how quickly you can turn things around and who your
+                                            lender is advising.
+                                        </p>
+                                        <hr class="education__divider-small" />
+                                        <footer class="education__footer">
+                                            <div class="education__footer-photo"></div>
+                                            <div class="education__footer-names">
+                                                <div class="education__footer-mark">by</div>
+                                                <div class="education__footer-author">Justin Roberts</div>
+                                            </div>
+                                        </footer>
+                                    </article>
+                                </a>
+                            </div>
                         </div>
-                    </footer>
-                    </article>
-                </a>
-                <a href="article.html" class="education__blog-small">
-                    <article>
-                        <span class="education__tag-small">Blog</span>
-                    <h3 class="education__headline-small">Article #3</h3>
-                    <p class="education__text">Terms of your offer, how quickly you can turn things around and who your lender is advising.
-                    </p>
-                    <hr class="education__divider-small">
-                    <footer class="education__footer">
-                        <div class="education__footer-photo"></div>
-                        <div class="education__footer-names">
-                            <span class="education__footer-mark">by</span>
-                            <span class="education__footer-author">Justin Roberts</span>
+                        <div class="education__resources">
+                            <h2 class="education__resources-title">Resources</h2>
+                            <div class="education__resources-wrap">
+                                <div class="education__resources-card">
+                                    <div class="education__resources-top">
+                                        <img
+                                            src="/src/img/book.webp"
+                                            alt=""
+                                            loading="lazy"
+                                            class="education__resources-img"
+                                        />
+                                        <div class="education__resources-info">
+                                            <span class="education__resources-label">Resources</span>
+                                            <h3 class="education__resources-name">
+                                                9 Things You Must Know About Buying Your First Home
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <hr class="education__resources-divider" />
+                                    <div class="education__resources-action">
+                                        <a href="/book.pdf" target="_blank" class="education__resources-btn">
+                                            Download
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="education__resources-card">
+                                    <div class="education__resources-top">
+                                        <img
+                                            src="/src/img/webinar.webp"
+                                            alt=""
+                                            loading="lazy"
+                                            class="education__resources-img"
+                                        />
+                                        <div class="education__resources-info">
+                                            <span class="education__resources-label">Resources</span>
+                                            <h3 class="education__resources-name">Webinar name</h3>
+                                        </div>
+                                    </div>
+                                    <hr class="education__resources-divider" />
+                                    <div class="education__resources-action">
+                                        <button
+                                            type="button"
+                                            class="education__resources-link education__resources-view"
+                                            aria-label="Play video: Webinar name"
+                                        ></button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </footer>
-                    </article>
-                </a>
-            </div>
-        </div>
-            <div class="education__resources">
-                <h2 class="education__resources-title">Resources</h2>
-                <div class="education__resources-wrap">
-                    <div class="education__resources-card">
-                    <div class="education__resources-top">
-                        <img src="/src/img/book.webp" alt="" loading="lazy" class="education__resources-img">
-                        <div class="education__resources-info">
-                            <span class="education__resources-label">Resources</span>
-                            <h3 class="education__resources-name">9 Things You Must Know About Buying Your First Home </h3>
-                        </div>
-                    </div>
-                    <hr class="education__resources-divider">
-                    <div class="education__resources-action">
-                        <a href="/book.pdf" target="_blank" class="education__resources-btn">Download</a>
                     </div>
                 </div>
-                <div class="education__resources-card">
-                    <div class="education__resources-top">
-                        <img src="/src/img/webinar.webp" alt="" loading="lazy" class="education__resources-img">
-                        <div class="education__resources-info">
-                            <span class="education__resources-label">Resources</span>
-                            <h3 class="education__resources-name">Webinar name</h3>
-                        </div>
-                    </div>
-                    <hr class="education__resources-divider">
-                    <div class="education__resources-action">
-                        <button type="button" class="education__resources-link education__resources-view" aria-label="Play video: Webinar name"></button>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-</main>
-<%- include('src/templates/footer.html') %>
-<script type="module" src="/src/js/script.js"></script>
-</body>
+            </section>
+        </main>
+        <%- include('src/templates/footer.html') %>
+        <script type="module" src="/src/js/script.js"></script>
+    </body>
 </html>

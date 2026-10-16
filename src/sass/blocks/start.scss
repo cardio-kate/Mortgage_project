@@ -8,14 +8,14 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 540px;           
+        height: 540px;
         background: url("/src/img/background__ebook.webp") center / cover no-repeat;
     }
     &__logo {
         display: block;
         margin-left: calc(30px + 0.4583333 * (100vw - 1440px));
         padding-top: 30px;
-        filter: brightness(0) invert(1); 
+        filter: brightness(0) invert(1);
     }
     &__wrapper {
         max-width: 434px;
@@ -23,28 +23,28 @@
     }
     &__title {
         margin-top: 205px;
-        color: #FFF;
+        color: #fff;
         font-size: 48px;
         font-weight: 700;
-        line-height: 60px; 
+        line-height: 60px;
     }
     &__author {
         margin-top: 22px;
         color: rgba(255, 255, 255, 0.7);
         font-size: 16px;
         font-weight: 700;
-        line-height: 16px; 
+        line-height: 16px;
     }
 }
 
 @media screen and (max-width: 1440px) {
     .start {
-    &__logo {
-        margin-left: 30px;
-    }
-    &__wrapper {
-        margin-left: 324px;
-    }
+        &__logo {
+            margin-left: 30px;
+        }
+        &__wrapper {
+            margin-left: 324px;
+        }
     }
 }
 
@@ -64,8 +64,7 @@
         &::before {
             height: 440px;
         }
-        &
-        &__title {
+        & &__title {
             margin-top: 190px;
             font-size: 30px;
             line-height: 36px;

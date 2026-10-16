@@ -9,7 +9,7 @@
         color: $dark;
         font-size: 36px;
         font-weight: 700;
-        line-height: 36px; 
+        line-height: 36px;
     }
     &__wrapper {
         margin-top: 35px;
@@ -26,31 +26,31 @@
         text-decoration: none;
         cursor: pointer;
 
-        transition: 
-        box-shadow 0.3s ease,
-        background-color 0.3s ease;
+        transition:
+            box-shadow 0.3s ease,
+            background-color 0.3s ease;
         @media (hover: hover) and (pointer: fine) {
-        &:hover {
-            box-shadow: 0 27px 58px 0 rgba(0, 84, 114, 0.38);
-            background-color: $ui-active;
-            .blog__headline-small {
-                color: #fff;
-            }
-            .blog__text {
-                color: rgba(255, 255, 255, 0.7);
-            }
-            .blog__divider-small {
-                background-color: rgba(255, 255, 255, 0.2);
-            }
-            .blog__footer-author {
-                color: #fff;
-            }
-            .blog__tag-small,
-            .blog__footer-mark {
-                color: rgba(255, 255, 255, 0.5);
+            &:hover {
+                box-shadow: 0 27px 58px 0 rgba(0, 84, 114, 0.38);
+                background-color: $ui-active;
+                .blog__headline-small {
+                    color: #fff;
+                }
+                .blog__text {
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                .blog__divider-small {
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+                .blog__footer-author {
+                    color: #fff;
+                }
+                .blog__tag-small,
+                .blog__footer-mark {
+                    color: rgba(255, 255, 255, 0.5);
+                }
             }
         }
-    }
     }
     &__divider-small {
         width: 260px;
@@ -63,7 +63,7 @@
         margin-top: 19px;
         font-size: 14px;
         font-weight: 400;
-        line-height: 24px; 
+        line-height: 24px;
         max-width: 308px;
         color: rgba(0, 0, 0, 0.5);
     }
@@ -85,7 +85,8 @@
         margin-top: 23px;
         display: flex;
         gap: 12px;
-        &-img, &-photo {
+        &-img,
+        &-photo {
             background-repeat: no-repeat;
             width: 48px;
             height: 48px;
@@ -109,12 +110,12 @@
             color: $dark;
             font-size: 16px;
             font-weight: 700;
-            line-height: 16px; 
+            line-height: 16px;
         }
         &-mark {
             font-size: 14px;
             font-weight: 400;
-            line-height: 14px; 
+            line-height: 14px;
             color: rgba(0, 0, 0, 0.5);
         }
     }

@@ -23,15 +23,15 @@
         padding: 19px 32px;
         border: none;
         border-radius: 4px;
-        color: #FFF;
+        color: #fff;
         font-size: 16px;
         font-weight: 700;
         cursor: pointer;
         transition: background-color 0.3s ease;
         @media (hover: hover) and (pointer: fine) {
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.3);
+            }
         }
     }
     &__divider {
@@ -40,15 +40,15 @@
         width: 100%;
     }
     &__logo {
-        filter: brightness(0) invert(1); 
+        filter: brightness(0) invert(1);
     }
     &__middle {
         display: grid;
         grid-template-columns:
-        auto
-        auto
-        auto
-        minmax(200px, 499px);
+            auto
+            auto
+            auto
+            minmax(200px, 499px);
         padding: 31px 0 56px;
         &-info {
             margin-right: 88px;
@@ -60,11 +60,12 @@
             margin-right: 100px;
         }
     }
-    &__text, &__text-web {
-        color: #FFF;
+    &__text,
+    &__text-web {
+        color: #fff;
         font-size: 10px;
         font-weight: 300;
-        line-height: 20px; 
+        line-height: 20px;
     }
     &__text {
         margin-top: 4px;
@@ -73,7 +74,7 @@
         margin-top: 24px;
     }
     &__subtitle {
-        color: #FFF;
+        color: #fff;
         font-size: 15px;
         font-weight: 700;
     }
@@ -88,19 +89,20 @@
     &__address {
         font-style: normal;
     }
-    &__link,&__address {
+    &__link,
+    &__address {
         color: rgba(255, 255, 255, 0.7);
         font-size: 14px;
         font-weight: 400;
-        line-height: 24px; 
+        line-height: 24px;
         text-decoration: none;
     }
     &__link {
         transition: color 0.3s ease;
         @media (hover: hover) and (pointer: fine) {
-        &:hover {
-            color: #fff;
-        }
+            &:hover {
+                color: #fff;
+            }
         }
     }
     &__bottom {
@@ -110,67 +112,72 @@
         margin: 0 auto;
         text-align: center;
         max-width: 672px;
-        color: #FFF;
+        color: #fff;
         font-size: 12px;
         font-weight: 300;
-        line-height: 24px; 
+        line-height: 24px;
     }
 }
 
 @media screen and (max-width: 1440px) {
     .footer {
-    &__wrapper {
-        margin-left: calc(30px + 0.083333 * (1440px - 100vw));
+        &__wrapper {
+            margin-left: calc(30px + 0.083333 * (1440px - 100vw));
+        }
     }
-}
 }
 
 @media screen and (max-width: 1200px) {
     .footer {
         &__wrapper {
-        margin-left: 0;
-        padding: 5px;
+            margin-left: 0;
+            padding: 5px;
         }
-        &__middle{
+        &__middle {
             grid-template-columns:
-            auto
-            max-content
-            max-content
-            minmax(180px, 499px);
-            &-info, &-pages, &-terms {
+                auto
+                max-content
+                max-content
+                minmax(180px, 499px);
+            &-info,
+            &-pages,
+            &-terms {
                 margin-right: 40px;
             }
         }
-}
+    }
 }
 
 @media screen and (max-width: 768px) {
     .footer {
         &__wrapper {
-        padding: 0;
+            padding: 0;
         }
         &__logo {
             width: 150px;
         }
         &__btn {
-        width: 120px;
-        padding: 10px 15px;
-        font-size: 12px;
+            width: 120px;
+            padding: 10px 15px;
+            font-size: 12px;
         }
         &__address {
-            width: 300px;
+            max-width: 300px;
         }
         &__list {
-        li {
-            margin-top: 8px;
+            li {
+                margin-top: 8px;
+            }
         }
-    }
-        &__middle{
+        &__middle {
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, auto);
             padding: 20px 0;
             row-gap: 30px;
-            &-descr, &-info, &-pages, &-terms {
+            &-descr,
+            &-info,
+            &-pages,
+            &-terms {
                 margin-right: 20px;
             }
             &-descr {
@@ -191,7 +198,7 @@
             }
         }
         &__text {
-        margin-top: 0;
+            margin-top: 0;
         }
     }
 }

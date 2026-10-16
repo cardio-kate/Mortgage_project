@@ -10,10 +10,10 @@
         gap: 24px;
     }
     &__top {
-        background: #F6F2FF;
-        width: 397px;                
-        max-width: 100%;              
-        justify-self: center;         
+        background: #f6f2ff;
+        width: 397px;
+        max-width: 100%;
+        justify-self: center;
         height: auto;
     }
     &__back {
@@ -21,8 +21,9 @@
         padding-top: 55px;
         border-radius: 4px;
         height: 234px;
-        background: linear-gradient(rgba(35, 123, 154, 0.32), rgba(35, 123, 154, 0.32)), 
-        url('/src/img/backVideo_1.webp') center no-repeat;
+        background:
+            linear-gradient(rgba(35, 123, 154, 0.32), rgba(35, 123, 154, 0.32)),
+            url("/src/img/backVideo_1.webp") center no-repeat;
         background-size: 126px;
         z-index: 1;
         &::before {
@@ -46,14 +47,14 @@
     }
     &__title {
         padding: 18px 60px 0;
-        color: #FFF;
+        color: #fff;
         text-align: center;
         font-size: 18px;
         font-weight: 700;
     }
     &__time {
         margin-top: 22px;
-        color: #FFF;
+        color: #fff;
         text-align: center;
         font-size: 13px;
         font-weight: 400;
@@ -63,25 +64,25 @@
 @media screen and (max-width: 1200px) {
     .videos {
         &__wrapper {
-        grid-template-columns: repeat(2, minmax(0, auto));
-        gap: 22px;
-        padding: 0 50px;
-    }
-    &__top {
-        width: 100%;             
-    }
+            grid-template-columns: repeat(2, minmax(0, auto));
+            gap: 22px;
+            padding: 0 50px;
+        }
+        &__top {
+            width: 100%;
+        }
     }
 }
 
 @media screen and (max-width: 768px) {
     .videos {
         &__wrapper {
-        grid-template-columns: minmax(0, 500px);
-        gap: 20px;
-        padding: 0;
-    }
-    &__top {
-        width: 500px;                
-    }
+            grid-template-columns: minmax(0, 500px);
+            gap: 20px;
+            padding: 0;
+        }
+        &__top {
+            width: 500px;
+        }
     }
 }

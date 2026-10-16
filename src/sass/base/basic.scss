@@ -1,4 +1,4 @@
-@use "/src/sass/base/variables.scss" as * ;
+@use "/src/sass/base/variables.scss" as *;
 
 h1,
 h2,
@@ -9,13 +9,13 @@ figure,
 p,
 ol,
 ul {
-	margin: 0;
+    margin: 0;
 }
 
 ol[role="list"],
 ul[role="list"] {
-	list-style: none;
-	padding-inline: 0;
+    list-style: none;
+    padding-inline: 0;
 }
 
 h1,
@@ -23,52 +23,49 @@ h2,
 h3,
 h4,
 h5 {
-	font-size: inherit;
-	font-weight: inherit;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 img {
-	display: block;
-	max-inline-size: 100%;
+    display: block;
+    max-inline-size: 100%;
 }
 
 :focus-visible {
-	outline: 2px solid $ui-active;
-	outline-offset: 3px;
+    outline: 2px solid $ui-active;
+    outline-offset: 3px;
 }
 
 .visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	white-space: nowrap;
-	border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
-
 
 html {
     font-family: "Roboto", sans-serif;
 }
 
 body {
-    background: #FFF;
+    background: #fff;
 }
 
 .container {
     width: 100%;
-	margin: 0 auto;
-	padding: 0 5%;
-	position: relative;
+    margin: 0 auto;
+    padding: 0 5%;
+    position: relative;
 }
 
 @media screen and (max-width: 1200px) {
-	.container {
-	padding: 0 20px;
+    .container {
+        padding: 0 20px;
+    }
 }
-}
-
-

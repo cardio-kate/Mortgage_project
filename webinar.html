@@ -1,111 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta name="description" content="Free webinar on mortgages and buying your first home." />
-	<meta name="author" content="Katsiaryna Dauhatseles" />
-    <title>Free Webinar</title>
-    <%- include('src/templates/head.html') %>
-</head>
-<body>
-    <%- include('src/templates/menu.html') %>
-<main>
-    <section class="webinar">
-        <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="siteMenu"><span></span><span></span><span></span></button>
-        <div class="container">
-            <a href="index.html" class="webinar__logo"><img src="/src/icons/logo.svg" alt="New American Funding home"></a>
-            <div class="webinar__wrapper">
-                <div class="webinar__info">
-                    <h1 class="webinar__title">Webinar name</h1>
-                    <div class="webinar__subtitle" data-author="Scott Johnson">Scott Johnson</div>
-                    <p class="webinar__text">So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, 
-                        but the more preparation you do upfront, the smoother your journey will be.</p>
-                    <form class="webinar__subscribe">
-                        <label for="email" class="visually-hidden">Your Email</label>
-                        <input required
-                        type="email"
-                        id="email"
-						name="email"
-                        class="webinar__subscribe-input"
-                        placeholder="Your Email">
-                        <button class="webinar__subscribe-btn">Get the webinar</button>
-                        <p class="webinar__subscribe-success" role="status"></p>
-                    </form>
-                </div>
-                <div class="webinar__video">
-                    <div class="webinar__btn">
-                        <button type="button" class="webinar__btn-play" aria-label="Play demo video (1:34)">
-                            <span class="webinar__btn-icon" aria-hidden="true"></span>
-                        </button>
-                        <div class="webinar__btn-sign">Play demo (1:34)</div>
-                    </div>    
-                    <img src="/src/img/macbook.webp" alt="" class="webinar__photo">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="seminar">
-        <div class="container">
-            <h2 class="seminar__title">What's in the webinar</h2>
-            <div class="seminar__wrapper">
-                <div class="seminar__item">
-                    <div class="seminar__item-circle">
-                        <img src="/src/icons/percent.svg" alt="" class="seminar__img">
-                    </div>
-                    <div class="seminar__item-descr">
-                        <h3 class="seminar__subtitle">Rate</h3>
-                        <hr class="seminar__divider">
-                        <p class="seminar__text">Yes. Rate is important, but it’s not everything. Understanding your rate 
-                        is more important.</p>
-                    </div>
-                </div>
-                <div class="seminar__item">
-                    <div class="seminar__item-circle">
-                        <img src="/src/icons/users.svg" alt="" class="seminar__img">
-                    </div>
-                    <div class="seminar__item-descr">
-                        <h3 class="seminar__subtitle">Relationships</h3>
-                        <hr class="seminar__divider">
-                        <p class="seminar__text">Build a solid relationship with a realtor
-                        a lender and never look back!</p>
+    <head>
+        <meta name="description" content="Free webinar on mortgages and buying your first home." />
+        <meta name="author" content="Katsiaryna Dauhatseles" />
+        <title>Free Webinar</title>
+        <%- include('src/templates/head.html') %>
+    </head>
+    <body>
+        <%- include('src/templates/menu.html') %>
+        <main>
+            <section class="webinar">
+                <button
+                    type="button"
+                    class="hamburger"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    aria-controls="siteMenu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="container">
+                    <a href="index.html" class="webinar__logo">
+                        <img src="/src/icons/logo.svg" alt="New American Funding home" />
+                    </a>
+                    <div class="webinar__wrapper">
+                        <div class="webinar__info">
+                            <h1 class="webinar__title">Webinar name</h1>
+                            <div class="webinar__subtitle" data-author="Scott Johnson">Scott Johnson</div>
+                            <p class="webinar__text">
+                                So you’re about to get into the world of homeownership. It’s okay...everyone feels lost
+                                during this process, but the more preparation you do upfront, the smoother your journey
+                                will be.
+                            </p>
+                            <form class="webinar__subscribe">
+                                <label for="email" class="visually-hidden">Your Email</label>
+                                <input
+                                    required
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="webinar__subscribe-input"
+                                    placeholder="Your Email"
+                                />
+                                <button class="webinar__subscribe-btn">Get the webinar</button>
+                                <p class="webinar__subscribe-success" role="status"></p>
+                            </form>
+                        </div>
+                        <div class="webinar__video">
+                            <div class="webinar__btn">
+                                <button type="button" class="webinar__btn-play" aria-label="Play demo video (1:34)">
+                                    <span class="webinar__btn-icon" aria-hidden="true"></span>
+                                </button>
+                                <div class="webinar__btn-sign">Play demo (1:34)</div>
+                            </div>
+                            <img src="/src/img/macbook.webp" alt="" class="webinar__photo" />
+                        </div>
                     </div>
                 </div>
-                <div class="seminar__item">
-                    <div class="seminar__item-circle">
-                        <img src="/src/icons/tablet.svg" alt="" class="seminar__img">
-                    </div>
-                    <div class="seminar__item-descr">
-                        <h3 class="seminar__subtitle">Pre-Approved</h3>
-                        <hr class="seminar__divider">
-                        <p class="seminar__text">Getting pre-approved early will play a key part in finding your dream home.</p>
+            </section>
+            <section class="seminar">
+                <div class="container">
+                    <h2 class="seminar__title">What's in the webinar</h2>
+                    <div class="seminar__wrapper">
+                        <div class="seminar__item">
+                            <div class="seminar__item-circle">
+                                <img src="/src/icons/percent.svg" alt="" class="seminar__img" />
+                            </div>
+                            <div class="seminar__item-descr">
+                                <h3 class="seminar__subtitle">Rate</h3>
+                                <hr class="seminar__divider" />
+                                <p class="seminar__text">
+                                    Yes. Rate is important, but it’s not everything. Understanding your rate is more
+                                    important.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="seminar__item">
+                            <div class="seminar__item-circle">
+                                <img src="/src/icons/users.svg" alt="" class="seminar__img" />
+                            </div>
+                            <div class="seminar__item-descr">
+                                <h3 class="seminar__subtitle">Relationships</h3>
+                                <hr class="seminar__divider" />
+                                <p class="seminar__text">
+                                    Build a solid relationship with a realtor a lender and never look back!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="seminar__item">
+                            <div class="seminar__item-circle">
+                                <img src="/src/icons/tablet.svg" alt="" class="seminar__img" />
+                            </div>
+                            <div class="seminar__item-descr">
+                                <h3 class="seminar__subtitle">Pre-Approved</h3>
+                                <hr class="seminar__divider" />
+                                <p class="seminar__text">
+                                    Getting pre-approved early will play a key part in finding your dream home.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="speaker">
-        <div class="container">
-            <h2 class="speaker__title">About speaker</h2>
-            <div class="speaker__wrapper">
-                <div class="speaker__img"><img src="/src/img/educator_webinar.webp" alt="" loading="lazy" class="speaker__photo"></div>
-                <div class="speaker__descr">
-                    <span class="speaker__role">The educator</span>
-                    <h3 class="speaker__name">Scott</h3>
-                    <hr class="speaker__divider">
-                    <p class="speaker__text">Rates change, but every mortgage journey starts with
-                    a relationship. (Pssst...it’s not just about clicking a button)</p>
-                    <div class="speaker__btn">
-                        <button type="button" class="speaker__btn-play" aria-label="Play video: Meet Scott">
-                            <span class="speaker__btn-icon" aria-hidden="true"></span>
-                        </button>
-                    <div class="speaker__btn-sign">Meet Scott</div>
+            </section>
+            <section class="speaker">
+                <div class="container">
+                    <h2 class="speaker__title">About speaker</h2>
+                    <div class="speaker__wrapper">
+                        <div class="speaker__img">
+                            <img src="/src/img/educator_webinar.webp" alt="" loading="lazy" class="speaker__photo" />
+                        </div>
+                        <div class="speaker__descr">
+                            <span class="speaker__role">The educator</span>
+                            <h3 class="speaker__name">Scott</h3>
+                            <hr class="speaker__divider" />
+                            <p class="speaker__text">
+                                Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s not
+                                just about clicking a button)
+                            </p>
+                            <div class="speaker__btn">
+                                <button type="button" class="speaker__btn-play" aria-label="Play video: Meet Scott">
+                                    <span class="speaker__btn-icon" aria-hidden="true"></span>
+                                </button>
+                                <div class="speaker__btn-sign">Meet Scott</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <%- include('src/templates/touch.html') %>
-</main>
-<%- include('src/templates/footer.html') %>
-<script type="module" src="/src/js/script.js"></script>
-</body>
+            </section>
+            <%- include('src/templates/touch.html') %>
+        </main>
+        <%- include('src/templates/footer.html') %>
+        <script type="module" src="/src/js/script.js"></script>
+    </body>
 </html>

@@ -7,16 +7,16 @@
         color: $dark;
         font-size: 36px;
         font-weight: 700;
-        line-height: 60px; 
+        line-height: 60px;
         text-align: center;
         &-descr {
-        font-size: 18px;
-        color: rgba(0, 0, 0, 0.5);
-        font-weight: 400;
-        text-align: center;
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.5);
+            font-weight: 400;
+            text-align: center;
+        }
     }
-    }
-    &__wrapper{
+    &__wrapper {
         margin-top: 30px;
         padding: 0 76px;
         display: flex;
@@ -26,7 +26,7 @@
     &__btn-wrap {
         position: absolute;
         display: flex;
-        align-items: center; 
+        align-items: center;
         top: 83px;
         gap: 24px;
         left: 283px;
@@ -34,23 +34,23 @@
     &__btn-play {
         @include anim_btn-blue;
     }
-    &__divider-mini{
+    &__divider-mini {
         @include divider;
         width: 40px;
         margin-top: 20px;
         margin-left: 0;
     }
-    &__divider{
+    &__divider {
         @include divider;
         width: 448px;
         margin-top: 2px;
         margin-left: 0;
     }
     &__card {
-        &-top{
-        position: relative;
-    }
-        &-img{
+        &-top {
+            position: relative;
+        }
+        &-img {
             position: relative;
             top: 45px;
             margin-left: 32px;
@@ -58,42 +58,42 @@
             height: 280px;
             object-fit: cover;
             z-index: 1;
-    }
+        }
         &-sign {
             position: relative;
             z-index: 2;
             font-size: 13px;
             font-weight: 400;
-    }
-        &-bottom{
+        }
+        &-bottom {
             position: relative;
             z-index: 2;
             background: #fff;
             padding: 28px 32px 0 32px;
             border-radius: 4px;
             box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
-    }
+        }
         &-role {
             color: $ui-active;
             font-size: 11px;
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-    }
+        }
         &-name {
             margin-top: 5px;
             color: $dark;
             font-size: 28px;
             font-weight: 700;
             line-height: 28px;
-    }
+        }
         &-descr {
             max-width: 360px;
             line-height: 24px;
             font-weight: 400;
             font-size: 14px;
             color: rgba(0, 0, 0, 0.5);
-    }
+        }
         &-items {
             margin-top: 24px;
             line-height: 28px;
@@ -107,7 +107,7 @@
         padding-bottom: 30px;
         display: flex;
         gap: 40px;
-        &-wrap{
+        &-wrap {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -119,9 +119,9 @@
             align-items: center;
             width: 48px;
             height: 48px;
-            border: 1px solid #E8E8E8;
+            border: 1px solid #e8e8e8;
             border-radius: 100%;
-            background: #FCFCFC;
+            background: #fcfcfc;
         }
         &-icon {
             max-width: 22px;
@@ -139,132 +139,131 @@
     }
 }
 
-
 @media screen and (max-width: 1200px) {
-    .heroes{
+    .heroes {
         &__title {
-        font-size: 24px;
-        &-descr {
-        font-size: 13px;
-        margin-top: 10px;
-    }
-    }
-    &__wrapper{
-        margin-top: 60px;
-        padding: 0 5px;
-        display: flex;
-        gap: 34px;
-    }
-    &__btn-wrap {
-        left: 263px;
-    }
-    &__divider{
-        width: 290px;
-    }
-    &__card {
-        &-img{
-            width: 300px;
-            height: 223px;
-            z-index: 1;
+            font-size: 24px;
+            &-descr {
+                font-size: 13px;
+                margin-top: 10px;
+            }
         }
-}
-}
+        &__wrapper {
+            margin-top: 60px;
+            padding: 0 5px;
+            display: flex;
+            gap: 34px;
+        }
+        &__btn-wrap {
+            left: 263px;
+        }
+        &__divider {
+            width: 290px;
+        }
+        &__card {
+            &-img {
+                width: 300px;
+                height: 223px;
+                z-index: 1;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .heroes{
-        &__wrapper{
-        flex-wrap: wrap;
-        gap: 74px;
-        padding: 0;
+    .heroes {
+        &__wrapper {
+            flex-wrap: wrap;
+            gap: 74px;
+            padding: 0;
         }
         &__btn-wrap {
-        left: 230px;
-        top: 63px;
+            left: 230px;
+            top: 63px;
         }
         &__title {
-        font-size: 30px;
-        line-height: 40px; 
+            font-size: 30px;
+            line-height: 40px;
             &-descr {
-            font-size: 16px;
+                font-size: 16px;
             }
         }
         &__card {
             &-bottom {
-            padding: 25px 20px 0 20px;
-        }
-        }
-        &__divider{
-        width: 330px;
-        }
-}
-}
-
-@media screen and (max-width: 375px) {
-    .heroes{
-        &__wrapper{
-        margin-top: 60px;
-        }
-        &__btn-wrap {
-        left: 200px;
-        gap: 20px;
-        top: 63px;
-        }
-        &__divider{
-        @include divider;
-        width: 280px;
-        }
-        &__title {
-        font-size: 28px;
-        line-height: 30px; 
-        &-descr {
-            font-size: 14px;
-            margin-top: 10px;
-        }
-        }
-        &__card {
-            &-sign {
-            font-size: 14px;
-            }
-            &-img{
-            margin-left: 0px;
-            }
-            &-bottom{
-            padding: 20px 10px 0 10px;
-            }
-            &-role {
-            font-size: 10px;
-            }
-            &-name {
-            font-size: 25px;
-            line-height: 20px;
-            }
-            &-descr {
-            max-width: 340px;
-            line-height: 18px;
-            font-size: 12px;
-            }
-            &-items {
-            margin-top: 22px;
-            line-height: 20px;
-            font-size: 14px;
+                padding: 25px 20px 0 20px;
             }
         }
-        &__skills {
-        gap: 24px;
-        &-circle {
-            width: 44px;
-            height: 44px;
-        }
-        &-icon {
-            width: 17px;
-            height: 17px;
-        }
-        &-text {
-            max-width: 58px;
-            font-size: 9px;
-            line-height: 10px;
+        &__divider {
+            width: 330px;
         }
     }
 }
+
+@media screen and (max-width: 375px) {
+    .heroes {
+        &__wrapper {
+            margin-top: 60px;
+        }
+        &__btn-wrap {
+            left: 200px;
+            gap: 20px;
+            top: 63px;
+        }
+        &__divider {
+            @include divider;
+            width: 280px;
+        }
+        &__title {
+            font-size: 28px;
+            line-height: 30px;
+            &-descr {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+        &__card {
+            &-sign {
+                font-size: 14px;
+            }
+            &-img {
+                margin-left: 0px;
+            }
+            &-bottom {
+                padding: 20px 10px 0 10px;
+            }
+            &-role {
+                font-size: 10px;
+            }
+            &-name {
+                font-size: 25px;
+                line-height: 20px;
+            }
+            &-descr {
+                max-width: 340px;
+                line-height: 18px;
+                font-size: 12px;
+            }
+            &-items {
+                margin-top: 22px;
+                line-height: 20px;
+                font-size: 14px;
+            }
+        }
+        &__skills {
+            gap: 24px;
+            &-circle {
+                width: 44px;
+                height: 44px;
+            }
+            &-icon {
+                width: 17px;
+                height: 17px;
+            }
+            &-text {
+                max-width: 58px;
+                font-size: 9px;
+                line-height: 10px;
+            }
+        }
+    }
 }
