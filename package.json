@@ -1,24 +1,23 @@
 {
-    "name": "mortgage",
-    "version": "1.0.0",
-    "description": "",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview",
-        "format": "prettier --write ."
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "ejs": "^3.1.10",
-        "prettier": "^3.3.3",
-        "sass": "^1.94.2",
-        "vite": "^7.2.4",
-        "vite-plugin-ejs": "^1.7.0",
-        "vite-plugin-full-reload": "^1.2.0"
-    },
-    "dependencies": {
-        "postcss-pxtorem": "^6.1.0"
-    }
+  "name": "mortgage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mortgage company website: educational layout project (5 pages, responsive)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write ."
+  },
+  "author": "Katsiaryna Dauhatseles",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs": "^3.1.10",
+    "postcss-pxtorem": "^6.1.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.94.2",
+    "vite": "^7.2.4",
+    "vite-plugin-ejs": "^1.7.0",
+    "vite-plugin-full-reload": "^1.2.0"
+  }
 }
