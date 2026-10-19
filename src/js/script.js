@@ -34,21 +34,24 @@ document.addEventListener("DOMContentLoaded", () => {
         return Array.from(menuBlock.querySelectorAll("a[href], button:not([disabled])"));
     }
 
+    // focus doesn't work until the menu's visibility transition ends
+    function focusFirstItem(e) {
+        if (e.target !== menu || e.propertyName !== "visibility") return;
+        menu.removeEventListener("transitionend", focusFirstItem);
+
+        const focusable = getFocusable();
+        if (focusable.length) focusable[0].focus();
+    }
+
     function openMenu() {
         menu.classList.add("active");
         document.body.style.overflow = "hidden";
         hamburger.setAttribute("aria-expanded", "true");
-
-        // wait until menu becomes visible, otherwise focus doesn't work
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                const focusable = getFocusable();
-                if (focusable.length) focusable[0].focus();
-            });
-        });
+        menu.addEventListener("transitionend", focusFirstItem);
     }
 
     function closeMenu() {
+        menu.removeEventListener("transitionend", focusFirstItem);
         menu.classList.remove("active");
         document.body.style.overflow = "";
         hamburger.setAttribute("aria-expanded", "false");
