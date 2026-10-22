@@ -1,5 +1,11 @@
 @use "/src/sass/base/variables.scss" as *;
 
+@mixin pulse {
+    @media (prefers-reduced-motion: no-preference) {
+        animation: pulse 3s linear infinite;
+    }
+}
+
 @mixin anim_btn-blue {
     width: 40px;
     height: 40px;
@@ -12,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: pulse 3s linear infinite;
+    @include pulse;
     transition: background-color 0.3s ease;
     @media (hover: hover) and (pointer: fine) {
         &:hover {
@@ -46,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: pulse 3s linear infinite;
+    @include pulse;
     &::before {
         content: "";
         position: absolute;
@@ -221,7 +227,7 @@
     cursor: pointer;
     position: relative;
     box-shadow: 0 0 0 8px rgba(79, 143, 177, 0.35);
-    animation: pulse 3s linear infinite;
+    @include pulse;
     transition: background-color 0.3s ease;
     @media (hover: hover) and (pointer: fine) {
         &:hover {
