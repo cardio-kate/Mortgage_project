@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
         panels.forEach((panel) => {
             const isActive = panel.dataset.step === step;
             panel.classList.toggle("active", isActive);
-            panel.setAttribute("aria-current", isActive ? "step" : "false");
+            panel.querySelector("button").setAttribute("aria-current", isActive ? "step" : "false");
         });
     }
 
@@ -119,16 +119,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // the whole card is clickable, the button inside gives keyboard access
     panels.forEach((panel) => {
         panel.addEventListener("click", () => {
             activateStep(panel.dataset.step);
-        });
-
-        panel.addEventListener("keydown", (e) => {
-            if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                activateStep(panel.dataset.step);
-            }
         });
     });
 

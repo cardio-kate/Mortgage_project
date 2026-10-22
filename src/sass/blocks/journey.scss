@@ -38,6 +38,10 @@
         border-radius: 4px;
         border: 1px solid #eaeaea;
         cursor: pointer;
+        &:has(:focus-visible) {
+            outline: 2px solid $ui-active;
+            outline-offset: 3px;
+        }
         span {
             color: $ui-active;
             font-size: 11px;
@@ -51,6 +55,18 @@
             font-size: 28px;
             font-weight: 700;
             line-height: 28px;
+        }
+        button {
+            padding: 0;
+            border: none;
+            background: none;
+            font: inherit;
+            color: inherit;
+            text-align: left;
+            cursor: pointer;
+            &:focus-visible {
+                outline: none;
+            }
         }
         hr {
             @include divider;
