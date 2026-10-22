@@ -315,7 +315,7 @@
             font-weight: 700;
         }
     }
-    &__modal.show {
+    &__modal[open] {
         transform: translateX(0);
         opacity: 1;
         visibility: visible;
@@ -433,7 +433,7 @@
                 }
             }
         }
-        &__modal.show {
+        &__modal[open] {
             transform: translateX(0);
             opacity: 1;
             margin-right: 10px;

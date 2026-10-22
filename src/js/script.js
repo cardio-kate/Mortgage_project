@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const progress = scrolled / sectionHeight;
 
             if (progress > 0.7) {
-                modal.classList.add("show");
+                modal.show();
                 window.removeEventListener("scroll", checkVisibility);
             }
         }
@@ -154,10 +154,13 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener("scroll", checkVisibility);
 
         if (modalClose) {
-            modalClose.addEventListener("click", () => {
-                modal.classList.remove("show");
-            });
+            modalClose.addEventListener("click", () => modal.close());
         }
+
+        // non-modal dialogs don't close on Escape by default
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && modal.open) modal.close();
+        });
     }
 
     const pages = document.querySelectorAll(".reviews__page-item");
