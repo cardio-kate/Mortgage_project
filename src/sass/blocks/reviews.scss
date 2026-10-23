@@ -335,9 +335,9 @@
         border-radius: 50%;
         border: 1px solid #287792;
         background: #278fb4;
-        position: relative;
         z-index: 2;
         cursor: pointer;
+        @include hit-area;
     }
     &__dot.active {
         display: flex;

@@ -6,6 +6,16 @@
     }
 }
 
+// enlarges the clickable area of small controls without changing their look
+@mixin hit-area {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        inset: -6px;
+    }
+}
+
 @mixin anim_btn-blue {
     width: 40px;
     height: 40px;
