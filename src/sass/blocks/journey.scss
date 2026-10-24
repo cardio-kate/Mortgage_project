@@ -505,7 +505,8 @@
         }
         &__modal {
             &-content {
-                width: 320px;
+                // leaves room for the close button that sticks out on the left
+                width: min(320px, 100vw - 40px);
             }
             &-icon {
                 width: 22px;
@@ -515,6 +516,8 @@
                 gap: 8px;
             }
             &-text {
+                flex: 1;
+                width: auto;
                 line-height: 18px;
             }
             &-avatar {

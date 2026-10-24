@@ -361,8 +361,17 @@
                 align-self: center;
                 font-size: 30px;
             }
+            &-top {
+                padding: 24px 20px;
+            }
             &-divider {
-                width: 80%;
+                width: auto;
+                margin-inline: 20px;
+            }
+            // 8px on top of the padding for the button's shadow ring
+            &-btn,
+            &-link {
+                margin-left: 28px;
             }
         }
     }

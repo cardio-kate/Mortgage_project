@@ -126,7 +126,20 @@
         }
         &__wrapper {
             padding: 0;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+        }
+        &__name {
+            font-size: 16px;
+        }
+        &__top {
+            padding: 24px 20px;
+        }
+        &__divider {
+            width: auto;
+            margin-inline: 20px;
+        }
+        &__action {
+            margin-right: 20px;
         }
     }
 }
