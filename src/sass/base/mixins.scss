@@ -139,9 +139,10 @@
 }
 
 @mixin btn-sched-mini {
-    width: 120px;
+    width: auto;
+    min-width: 120px;
     border-radius: 4px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     border: 1px solid rgba(52, 47, 69, 0.3);
     color: $dark;
@@ -164,13 +165,14 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
-    width: 120px;
+    width: auto;
+    min-width: 120px;
     border-radius: 4px;
     border: none;
     padding: 10px 12px;
     background: $ui-active;
     color: #fff;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     cursor: pointer;
     position: relative;
