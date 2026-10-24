@@ -1,3 +1,7 @@
 $ui-active: #278fb4;
 $dark-blue: #126893;
 $dark: #342f45;
+
+// muted text, lightest values that still pass WCAG AA (4.5:1)
+$text-muted: rgba(0, 0, 0, 0.55);
+$text-muted-light: rgba(255, 255, 255, 0.85);

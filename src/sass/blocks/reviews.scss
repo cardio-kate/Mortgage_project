@@ -13,7 +13,7 @@
         line-height: 60px;
         &-descr {
             margin-left: calc(30px + 0.4583333 * (100vw - 1440px));
-            color: rgb(0, 0, 0, 0.5);
+            color: $text-muted;
             font-size: 18px;
             font-weight: 400;
         }
@@ -165,7 +165,7 @@
             filter: brightness(0) invert(0);
         }
         &-count {
-            color: rgb(0, 0, 0, 0.5);
+            color: $text-muted;
             font-size: 14px;
             font-weight: 400;
             line-height: 24px;
@@ -205,7 +205,7 @@
             line-height: 28px;
         }
         &-total {
-            color: rgba(255, 255, 255, 0.5);
+            color: $text-muted-light;
             font-size: 12px;
             font-weight: 700;
             line-height: 28px;
@@ -292,14 +292,14 @@
             margin-top: 14px;
             font-size: 14px;
             font-weight: 400;
-            color: rgb(0, 0, 0, 0.5);
+            color: $text-muted;
         }
         &-div {
             @include divider;
             width: 415px;
         }
         &-text {
-            color: rgb(0, 0, 0, 0.5);
+            color: $text-muted;
             font-size: 14px;
             font-weight: 400;
             line-height: 24px;

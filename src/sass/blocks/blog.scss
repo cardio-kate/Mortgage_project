@@ -65,7 +65,7 @@
         font-weight: 400;
         line-height: 24px;
         max-width: 308px;
-        color: rgba(0, 0, 0, 0.5);
+        color: $text-muted;
     }
     &__tag-small {
         color: $ui-active;
@@ -116,7 +116,7 @@
             font-size: 14px;
             font-weight: 400;
             line-height: 14px;
-            color: rgba(0, 0, 0, 0.5);
+            color: $text-muted;
         }
     }
 }

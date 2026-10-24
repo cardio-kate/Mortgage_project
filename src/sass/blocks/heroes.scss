@@ -11,7 +11,7 @@
         text-align: center;
         &-descr {
             font-size: 18px;
-            color: rgba(0, 0, 0, 0.5);
+            color: $text-muted;
             font-weight: 400;
             text-align: center;
         }
@@ -92,7 +92,7 @@
             line-height: 24px;
             font-weight: 400;
             font-size: 14px;
-            color: rgba(0, 0, 0, 0.5);
+            color: $text-muted;
         }
         &-items {
             margin-top: 24px;

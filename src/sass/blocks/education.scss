@@ -101,7 +101,7 @@
     }
     &__text {
         max-width: 308px;
-        color: rgba(0, 0, 0, 0.5);
+        color: $text-muted;
     }
     &__text-big {
         width: 394px;
@@ -162,7 +162,7 @@
             color: rgba(255, 255, 255, 0.5);
         }
         &-mark {
-            color: rgba(0, 0, 0, 0.5);
+            color: $text-muted;
         }
         &-name {
             color: rgba(255, 255, 255);
