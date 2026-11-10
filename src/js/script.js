@@ -132,20 +132,20 @@ document.addEventListener("DOMContentLoaded", () => {
     if (modal && section) {
         const modalClose = modal.querySelector(".journey__modal-close");
 
-        function checkVisibility() {
-            const rect = section.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-            const sectionHeight = section.offsetHeight;
-            const scrolled = windowHeight - rect.top;
-            const progress = scrolled / sectionHeight;
+        const trigger = section.querySelector(".journey__video");
 
-            if (progress > 0.7) {
-                modal.show();
-                window.removeEventListener("scroll", checkVisibility);
-            }
-        }
+        // shows the modal once the top of the video block reaches the middle of the screen
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    modal.show();
+                    observer.disconnect();
+                }
+            },
+            { rootMargin: "0px 0px -50% 0px" },
+        );
 
-        window.addEventListener("scroll", checkVisibility);
+        if (trigger) observer.observe(trigger);
 
         if (modalClose) {
             modalClose.addEventListener("click", () => modal.close());
