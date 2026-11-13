@@ -10,7 +10,6 @@
     "format": "prettier --write ."
   },
   "author": "Katsiaryna Dauhatseles",
-  "license": "ISC",
   "devDependencies": {
     "ejs": "^3.1.10",
     "postcss-pxtorem": "^6.1.0",

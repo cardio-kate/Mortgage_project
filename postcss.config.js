@@ -2,11 +2,11 @@ module.exports = {
     plugins: {
         "postcss-pxtorem": {
             rootValue: 16,
-            propList: ["*"], // Преобразовывать все свойства
-            selectorBlackList: [], // Селекторы, которые нужно исключить из преобразования
-            replace: true, // Заменять px на rem
-            mediaQuery: true, // Преобразовывать px внутри media queries
-            minPixelValue: 0, // Минимальное значение px для преобразования
+            propList: ["*"], // convert all properties
+            selectorBlackList: [], // selectors to skip
+            replace: true, // replace px with rem instead of adding a fallback
+            mediaQuery: true, // convert px in media queries too
+            minPixelValue: 0, // convert every px value, however small
         },
     },
 };
